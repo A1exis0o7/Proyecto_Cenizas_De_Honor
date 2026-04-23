@@ -3,6 +3,6 @@
 - Luna (lu-nrl)
 - Isabel (IsaLol1A)
 
--Alexis (A1exis0o7)
+- Alexis (A1exis0o7)
 
--Miguel (MiguelangelNA2) "MiguelangelNA2" 
+- Miguel (MiguelangelNA2)  
