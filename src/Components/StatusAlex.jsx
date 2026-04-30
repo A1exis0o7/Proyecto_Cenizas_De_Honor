@@ -4,9 +4,9 @@ const StatusAlex = () => {
   return (
     <div className='vidas'>
 
-        <button>vida 1</button>
+        <button>vida 1 :/</button>
         <button>vida 2</button>
-        <button>vida 3</button>
+        <button>vida 3 😮</button>
 
     </div>
   )
