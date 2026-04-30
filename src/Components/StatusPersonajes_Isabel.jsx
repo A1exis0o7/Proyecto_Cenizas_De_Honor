@@ -6,7 +6,7 @@ return (
 
 <div className="personajes">
 
-    <button>personaje 1 🫠 </button>
+    <button>personaje 1 </button>
     <button>personaje 2 </button> 
     <button>personaje 3 </button>
 

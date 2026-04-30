@@ -5,7 +5,7 @@ const StatusAlex = () => {
     <div className='vidas'>
 
         <button>vida 1 :/</button>
-        <button>vida 2</button>
+        <button>vida 2 *emoji*</button>
         <button>vida 3 😮</button>
 
     </div>

@@ -6,7 +6,7 @@ const StatusGemas = () => {
     <div className='Gemas'>
         <button>Gema 1 🫥</button>
         <button>Gema 2 *emoji*</button>
-        <button>Gema 3</button>
+        <button>Gema 3 🐞</button>
 
       </div>
     </>
