@@ -7,7 +7,7 @@ export const StatusMiguel = () => {
       <div className='puntos'>
         <button>100</button>
         <button>100</button>
-        <button>200</button>
+        <button>200 😒</button>
       </div>
       </>
   return (

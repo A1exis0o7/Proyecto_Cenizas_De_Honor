@@ -4,7 +4,7 @@ const StatusGemas = () => {
   return (
     <>
     <div className='Gemas'>
-        <button>Gema 1</button>
+        <button>Gema 1 🫥</button>
         <button>Gema 2</button>
         <button>Gema 3</button>
 
