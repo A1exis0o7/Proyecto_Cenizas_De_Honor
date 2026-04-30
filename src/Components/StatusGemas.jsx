@@ -1,9 +1,9 @@
 import React from 'react'
 
-const StatusLuna = () => {
+const StatusGemas = () => {
   return (
-    <div>StatusLuna</div>
+    <div>StatusGemas</div>
   )
 }
 
-export default StatusLuna
+export default StatusGemas
