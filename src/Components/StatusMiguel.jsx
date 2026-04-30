@@ -8,6 +8,7 @@ export const StatusMiguel = () => {
         <button>100</button>
         <button>100 *emoji*</button>
         <button>200 😒</button>
+        <button>200 😶‍🌫️🤍</button>
       </div>
       </>
   return (
