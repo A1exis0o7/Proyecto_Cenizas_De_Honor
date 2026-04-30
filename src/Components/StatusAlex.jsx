@@ -2,7 +2,13 @@ import React from 'react'
 
 const StatusAlex = () => {
   return (
-    <div>Pollo Del Ara</div>
+    <div className='vidas'>
+
+        <button>vida 1</button>
+        <button>vida 2</button>
+        <button>vida 3</button>
+
+    </div>
   )
 }
 
