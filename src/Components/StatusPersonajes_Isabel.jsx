@@ -2,8 +2,8 @@ import React,{useState} from 'react';
 
 export const StatusPersonajes_Isabel = ( ) => {
 
-    const [puntos, setPuntos] = useState('');
-      
+    const [personajes, setPersonajes] = useState('');
+
 return (
 <>
 
