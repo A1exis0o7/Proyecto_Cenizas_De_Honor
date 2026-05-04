@@ -1,20 +1,14 @@
 import React from 'react'
 import { StatusMiguel } from './Components/StatusMiguel'
-
+import StatusAlex from './Components/StatusAlex'
 const App = () => {
   return (
-    <>
+  <>
 
     <StatusMiguel/>
+    <StatusAlex/>  
 
-    </>
-
-import StatusAlex from './Components/StatusAlex'
-
-const App = () => {
-  return (
-    <div>App</div>
-    <StatusAlex/>
+  </>
   )
 }
 
