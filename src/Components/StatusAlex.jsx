@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const StatusAlex = () => {
+export const StatusAlex = () => {
+
+    const [vidas, setVidas] = useState("")
   return (
+    <>
     <div className='vidas'>
 
         <button>vida 1 🐞:/</button>
@@ -9,6 +12,7 @@ const StatusAlex = () => {
         <button>vida 3 😮</button>
 
     </div>
+    </>
   )
 }
 
