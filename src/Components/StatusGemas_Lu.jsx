@@ -2,8 +2,10 @@ import React from 'react'
 
 const StatusGemas = () => {
   return (
-    <>
+    <> 
+    <div> Status Luna </div>
     <div className='Gemas'>
+     
         <button>Gema 1 🫥</button>
         <button>Gema 2 *emoji*</button>
         <button>Gema 3 🐞</button>
