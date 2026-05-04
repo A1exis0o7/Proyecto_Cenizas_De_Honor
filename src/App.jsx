@@ -7,7 +7,7 @@ const App = () => {
   <>
 
     <StatusMiguel/>
-    <StatusAlex/>  
+    <StatusAlex/> 
     <StatusPersonajes_Isabel/>
 
   </>
