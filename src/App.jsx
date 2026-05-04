@@ -1,8 +1,14 @@
 import React from 'react'
+import { StatusMiguel } from './Components/StatusMiguel'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+
+    <StatusMiguel></>
+
+    </>
+
   )
 }
 
