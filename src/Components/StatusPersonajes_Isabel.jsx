@@ -1,6 +1,9 @@
-import React from 'react';
+import React,{useState} from 'react';
 
-const StatusPersonajes_Isabel = ( ) => {
+export const StatusPersonajes_Isabel = ( ) => {
+
+    const [puntos, setPuntos] = useState('');
+      
 return (
 <>
 
