@@ -7,6 +7,7 @@ const App = () => {
 
     <StatusMiguel/>
     <StatusAlex/>  
+    <StatusPersonajes_Isabel/>
 
   </>
   )
