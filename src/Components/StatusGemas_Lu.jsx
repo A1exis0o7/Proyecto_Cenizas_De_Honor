@@ -1,6 +1,9 @@
 import React from 'react'
 
-const StatusGemas = () => {
+const StatusGemas_Lu = () => {
+
+  const [gemas, setGemas] = useState('');
+  
   return (
     <> 
     <div> Status Luna </div>
