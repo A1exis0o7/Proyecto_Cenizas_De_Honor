@@ -3,8 +3,11 @@ import React, { useState } from 'react'
 export const StatusMiguel = () => {
 
       const [puntos, setPuntos] = useState('');
-      <>
-      <div className='puntos'>
+   
+  return (
+     <>
+    <div>StatusMiguel</div>
+    <div className='puntos'>
         
         <button>100</button>
         <button>100 *emoji*</button>
@@ -13,7 +16,5 @@ export const StatusMiguel = () => {
         
       </div>
       </>
-  return (
-    <div>StatusMiguel</div>
   )
 }
