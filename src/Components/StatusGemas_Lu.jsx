@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-const StatusGemas_Lu = () => {
+    
+export const StatusGemas_Lu = () => {
 
   const [gemas, setGemas] = useState(0);
   
@@ -20,4 +21,4 @@ const StatusGemas_Lu = () => {
   )
 }
 
-export default StatusGemas
+export default StatusGemas_Lu
