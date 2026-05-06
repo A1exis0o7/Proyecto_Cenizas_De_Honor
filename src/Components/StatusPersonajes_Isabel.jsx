@@ -4,6 +4,17 @@ export const StatusPersonajes_Isabel = ( ) => {
 
     const [personajes, setPersonajes] = useState(0);
 
+    const getCharacters = () => {
+    const res = await fetch("https://rickandmortyapi.com/api/character/?page=2");
+    const data = await res.json();
+
+        console.log(data);
+    }
+
+    useEffect(() => {
+        getCharacters();
+    }, []);
+
 return (
 <>
 <div> Status Isabel </div>
