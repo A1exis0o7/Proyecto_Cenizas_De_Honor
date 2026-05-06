@@ -11,9 +11,9 @@ const StatusGemas_Lu = () => {
     <div className='Gemas'>
      
         <button onClick={ () => {setGemas((prev) => {prev + 1})}}>Gemas Azules🫥</button>
-        <button>Gemas Grises😎</button>
-        <button>Gemas Verdes🐞</button>
-        <button>Gemas Rojas😮</button>
+        <button onClick={ () => {setGemas((prev) => {prev + 5})}}>Gemas Grises😎</button>
+        <button onClick={ () => {setGemas((prev) => {prev + 10})}}>Gemas Verdes🐞</button>
+        <button onClick={ () => {setGemas((prev) => {prev + 20})}}>Gemas Rojas😮</button>
 
       </div>
     </>
