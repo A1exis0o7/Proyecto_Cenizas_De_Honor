@@ -6,7 +6,7 @@ export const StatusPersonajes_Isabel = ( ) => {
 
 return (
 <>
-
+<div> Status Isabel </div>
 <h1>Personajes: {personajes}</h1>
 
 <div className="personajes">
