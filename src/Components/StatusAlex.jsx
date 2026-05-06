@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export const StatusAlex = () => {
 
-    const [vidas, setVidas] = useState("")
+    const [vidas, setVidas] = useState(0)
   return (
     <>
     <h1> Vidas : {vidas} </h1>
