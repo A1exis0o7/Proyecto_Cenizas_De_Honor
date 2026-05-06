@@ -5,11 +5,12 @@ export const StatusAlex = () => {
     const [vidas, setVidas] = useState("")
   return (
     <>
+    <h1> Vidas : {vidas} </h1>
     <div className='vidas'>
 
-        <button>vida 1 🐞:/</button>
-        <button>vida 2 *emoji*</button>
-        <button>vida 3 😮</button>
+        <button onClick={ () => {setVidas( (prev ) => { prev + 1} )}}>vida 1 🐞:/</button>
+        <button onClick={ () => {setVidas( (prev ) => { prev + 1} )}}>vida 2 *emoji*</button>
+        <button onClick={ () => {setVidas( (prev ) => { prev + 1} )}}>vida 3 😮</button>
 
     </div>
     </>
