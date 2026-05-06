@@ -2,16 +2,18 @@ import React from 'react'
 
 const StatusGemas_Lu = () => {
 
-  const [gemas, setGemas] = useState('');
+  const [gemas, setGemas] = useState(0);
   
   return (
     <> 
     <div> Status Luna </div>
+    <h1>Gemas: {gemas}</h1>
     <div className='Gemas'>
      
-        <button>Gema 1 🫥</button>
-        <button>Gema 2 *emoji*</button>
-        <button>Gema 3 🐞</button>
+        <button onClick={ () => {setGemas((prev) => {prev + 1})}}>Gemas Azules🫥</button>
+        <button>Gemas Grises😎</button>
+        <button>Gemas Verdes🐞</button>
+        <button>Gemas Rojas😮</button>
 
       </div>
     </>
