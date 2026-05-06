@@ -6,6 +6,7 @@ export const StatusPersonajes_Isabel = ( ) => {
 
 return (
 <>
+
 <h1>Personajes: {personajes}</h1>
 
 <div className="personajes">
@@ -19,3 +20,5 @@ return (
 )
 
 }
+
+export default StatusPersonajes_Isabel
