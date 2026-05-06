@@ -2,17 +2,17 @@ import React,{useState} from 'react';
 
 export const StatusPersonajes_Isabel = ( ) => {
 
-    const [personajes, setPersonajes] = useState('');
+    const [personajes, setPersonajes] = useState(0);
 
 return (
 <>
+<h1>Personajes: {personajes}</h1>
 
 <div className="personajes">
-
-    <button>personaje 1 🐞 </button>
-    <button>personaje 2 *emoji*</button> 
-    <button>personaje 3 🫠 </button>
-
+    <button onClick={(prev) => (prev + 1)}> personaje 1 🐞 </button>
+    <button onClick={(prev) => (prev + 1)}>personaje 2 *emoji*</button> 
+    <button onClick={(prev) => (prev + 1)}>personaje 3 🫠 </button>
+    <button onClick={(prev) => (prev + 1)}>personaje 4 </button>
 </div>
 
 </>
