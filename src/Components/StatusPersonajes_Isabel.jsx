@@ -1,37 +1,37 @@
-import React,{useState} from 'react';
+import React, { useEffect, useState } from 'react';
 
-export const StatusPersonajes_Isabel = ( ) => {
+export const StatusPersonajes_Isabel = () => {
 
     const [personajes, setPersonajes] = useState(0);
 
-  
-  const getCharacters = async () => {
 
-    const res = await fetch("https://rickandmortyapi.com/api/character");
-    const data = await res.json();
+    const getCharacters = async () => {
 
-    console.log(data);
+        const res = await fetch("https://rickandmortyapi.com/api/character");
+        const data = await res.json();
 
-  }
+        console.log(data);
 
-  useEffect(() => {
-    getCharacters();
-  }, [])
+    }
 
-return (
-<>
-<div> Status Isabel </div>
-<h1>Personajes: {personajes}</h1>
+    useEffect(() => {
+        getCharacters();
+    }, [])
 
-<div className="personajes">
-    <button onClick={() =>  {setPersonajes( prev  =>  prev + 1 )}}> personaje 1 🐞 </button>
-    <button onClick={() =>  {setPersonajes( prev  =>  prev + 1 )}}>personaje 2 *emoji*</button> 
-    <button onClick={() =>  {setPersonajes( prev  =>  prev + 1 )}}>personaje 3 🫠 </button>
-    <button onClick={() =>  {setPersonajes( prev  =>  prev + 1 )}}>personaje 4 </button>
-</div>
+    return (
+        <>
+            <div> Status Isabel </div>
+            <h1>Personajes: {personajes}</h1>
 
-</>
-)
+            <div className="personajes">
+                <button onClick={() => { setPersonajes(prev => prev + 1) }}> personaje 1 🐞 </button>
+                <button onClick={() => { setPersonajes(prev => prev + 1) }}>personaje 2 *emoji*</button>
+                <button onClick={() => { setPersonajes(prev => prev + 1) }}>personaje 3 🫠 </button>
+                <button onClick={() => { setPersonajes(prev => prev + 1) }}>personaje 4 </button>
+            </div>
+
+        </>
+    )
 
 }
 
