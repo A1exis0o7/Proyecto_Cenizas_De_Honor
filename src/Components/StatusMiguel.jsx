@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 export const StatusMiguel = () => {
 
-      const [puntos, setPuntos] = useState();
+      const [puntos, setPuntos] = useState(0);
             const [characters, setCharacters] = useState([]);
       const getCharacters = async () => { 
         const res = await fetch("https://rickandmortyapi.com/api/character");
