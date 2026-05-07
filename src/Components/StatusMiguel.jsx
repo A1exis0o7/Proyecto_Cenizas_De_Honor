@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 
 export const StatusMiguel = () => {
 
-      const [puntos, setPuntos] = useState(0);
-            const [characters, setCharacters] = useState(0);
+      const [puntos, setPuntos] = useState();
+            const [characters, setCharacters] = useState([]);
       const getCharacters = async () => { 
         const res = await fetch("https://rickandmortyapi.com/api/character");
         const data = await res.json();
-        setCharacters(data.results.length);
+        setCharacters(data.results);
         console.log(data);
       }
       
@@ -29,11 +29,9 @@ export const StatusMiguel = () => {
 
       </div>
       <h1>Personajes rick and morty (miguel)</h1>
-      {
-        characters.map( (char) => (
-          <li key = {index}>{char.name}</li>
-        ) )
-      }
+      {characters.map((char, index) => (
+        <li key={index}>{char.name}</li>
+      ))}
       </>
   )
 }
