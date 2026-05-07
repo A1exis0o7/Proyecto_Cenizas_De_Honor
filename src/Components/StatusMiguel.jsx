@@ -3,11 +3,14 @@ import React, { useEffect, useState } from 'react'
 export const StatusMiguel = () => {
 
       const [puntos, setPuntos] = useState(0);
+            const [characters, setCharacters] = useState(0);
       const getCharacters = async () => { 
         const res = await fetch("https://rickandmortyapi.com/api/character");
         const data = await res.json();
+        setCharacters(data.results.length);
         console.log(data);
       }
+      
       useEffect(() => {
         getCharacters()
       
@@ -25,6 +28,12 @@ export const StatusMiguel = () => {
         <button onClick={ () => {setPuntos (prev => prev + 200)}}>200 😶‍🌫️🤍</button>
 
       </div>
+      <h1>Personajes rick and morty (miguel)</h1>
+      {
+        characters.map( (char) => (
+          <li key = {index}>{char.name}</li>
+        ) )
+      }
       </>
   )
 }
