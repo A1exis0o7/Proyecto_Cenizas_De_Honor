@@ -4,11 +4,14 @@ import React, { useEffect, useState } from 'react'
 export const StatusGemas_Lu = () => {
 
   const [gemas, setGemas] = useState(0);
+  const [characters, setCharacters] = useState([]);
 
   const getCharacters = async () => {
 
     const res = await fetch("https://rickandmortyapi.com/api/character");
     const data = await res.json();
+
+    setCharacters(data.results);
 
     console.log(data);
 
@@ -30,6 +33,11 @@ export const StatusGemas_Lu = () => {
         <button onClick={() => { setGemas(prev => prev + 20) }}>Gemas Rojas😮</button>
 
       </div>
+
+      <h1>Personajes Rick and Morty (Luna) </h1>
+{characters.map((char, index) => (
+  <li key={index}>{char.name}</li>
+))}
     </>
   )
 }
