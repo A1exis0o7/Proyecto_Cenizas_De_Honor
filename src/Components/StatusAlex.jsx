@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from 'react'
 
+
 export const StatusAlex = () => {
 
     const [vidas, setVidas] = useState(0)
+    const [personajes, setPersonajes] = useState([])
 
     const getCharacters = async () => {
       const res = await fetch ( "https://rickandmortyapi.com/api/character" )
       const data = await res.json()
+      setPersonajes(data.results)
+      console.log(data);
 
     }
 
@@ -27,6 +31,15 @@ export const StatusAlex = () => {
         <button onClick={ () => {setVidas( (prev ) =>  prev + 3 )}}>vida 3 😮</button>
 
     </div>
+
+    <h1>personajes rick and morty () </h1>
+
+    {
+      personajes.map(( p , index ) =>(
+        <li key={index}>{p.name}</li>
+      ))
+    }
+
     </>
   )
 }
