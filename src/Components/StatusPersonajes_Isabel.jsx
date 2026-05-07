@@ -4,16 +4,19 @@ export const StatusPersonajes_Isabel = ( ) => {
 
     const [personajes, setPersonajes] = useState(0);
 
-    const getCharacters = () => {
-    const res = await fetch("https://rickandmortyapi.com/api/character/?page=2");
+  
+  const getCharacters = async () => {
+
+    const res = await fetch("https://rickandmortyapi.com/api/character");
     const data = await res.json();
 
-        console.log(data);
-    }
+    console.log(data);
 
-    useEffect(() => {
-        getCharacters();
-    }, []);
+  }
+
+  useEffect(() => {
+    getCharacters();
+  }, [])
 
 return (
 <>
