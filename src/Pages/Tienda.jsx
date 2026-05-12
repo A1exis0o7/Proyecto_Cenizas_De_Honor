@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TiendaCodex = () => {
+const Tienda = () => {
   const productos = [
     {
       nombre: "Camisas",
@@ -87,4 +87,4 @@ const TiendaCodex = () => {
   );
 };
 
-export default TiendaCodex;
+export default Tienda;
