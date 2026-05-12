@@ -13,6 +13,7 @@ const App = () => {
     <StatusPersonajes_Isabel/>
     <StatusGemas_Lu/> */}
     <Contactenos/>
+    <Tienda/>
 
   </>
   )
