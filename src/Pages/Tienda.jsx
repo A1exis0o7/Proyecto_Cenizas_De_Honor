@@ -1,4 +1,13 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTiktok,
+  FaYoutube,
+  FaXTwitter,
+} from 'react-icons/fa6';
+
 
 const Tienda = () => {
   const productos = [
@@ -84,7 +93,11 @@ const Tienda = () => {
       </div>
 
     </div>
+    
+    
   );
+  
 };
+
 
 export default Tienda;
