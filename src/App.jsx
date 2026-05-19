@@ -11,9 +11,10 @@ import Tienda from './Pages/Tienda'
 const App = () => {
   return (
   <>
-
+    <Home/>
     {/* <Contactenos/> */}
     <Tienda/>
+    
 
   </>
   )
