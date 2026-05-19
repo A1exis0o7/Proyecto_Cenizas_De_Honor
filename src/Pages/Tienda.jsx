@@ -13,7 +13,7 @@ const Tienda = () => {
   const productos = [
     {
       nombre: "Camisas",
-      img: "https://via.placeholder.com/200x200?text=Camisas"
+      img: "./"
     },
     {
       nombre: "Gorras",
