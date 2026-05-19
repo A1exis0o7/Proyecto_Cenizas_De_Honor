@@ -19,7 +19,7 @@ const Nosotros = () => {
         overflowX: 'hidden',
       }}
     >
-      {/* ================= HERO ================= */}
+    
       <section
         style={{
           minHeight: '100vh',
@@ -170,7 +170,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* ================= PROBLEMA ================= */}
+    
       <section className="py-5">
         <div className="container">
           <h2
@@ -226,7 +226,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* ================= MISION ================= */}
+      {/* MISION  */}
       <section className="py-5">
         <div className="container">
           <h2
@@ -236,7 +236,7 @@ const Nosotros = () => {
               fontWeight: 'bold',
             }}
           >
-            NUESTRA MISIÓN
+          
           </h2>
 
           <div className="row g-5">
@@ -266,7 +266,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* ================= VISION ================= */}
+  
       <section className="py-5">
         <div className="container">
           <h2
