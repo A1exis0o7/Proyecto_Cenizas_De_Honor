@@ -6,7 +6,7 @@ import {
   FaYoutube,
   FaTiktok,
   FaArrowUp,
-} from 'react-icons/fa';
+} from 'react-content-integration'; // Ajusta la librería de iconos si es necesario
 import { FaXTwitter } from 'react-icons/fa6';
 
 const Nosotros = () => {
@@ -19,14 +19,12 @@ const Nosotros = () => {
         overflowX: 'hidden',
       }}
     >
-    
+      {/* HERO SECTION */}
       <section
         style={{
           minHeight: '100vh',
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1600&auto=format&fit=crop)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          // Reemplazado por un degradado sutil para mantener el peso visual oscuro sin usar imágenes externos
+          background: 'linear-gradient(135deg, #111 0%, #050505 100%)',
           position: 'relative',
         }}
       >
@@ -105,14 +103,16 @@ const Nosotros = () => {
                 </p>
               </div>
 
+              {/* Contenedor gris en lugar de la imagen del libro */}
               <div className="col-lg-6 text-center mt-5 mt-lg-0">
-                <img
-                  src="https://images.unsplash.com/photo-1589998059171-988d887df646?q=80&w=1000&auto=format&fit=crop"
-                  alt=""
-                  className="img-fluid rounded-4 shadow-lg"
+                <div
+                  className="rounded-4 shadow-lg mx-auto"
                   style={{
+                    width: '100%',
+                    height: '350px',
                     maxHeight: '450px',
-                    objectFit: 'cover',
+                    backgroundColor: '#1a1a1a',
+                    border: '1px solid #333',
                   }}
                 />
               </div>
@@ -140,10 +140,15 @@ const Nosotros = () => {
 
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
-              <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
-                alt=""
-                className="img-fluid rounded-4"
+              {/* Contenedor gris en lugar de la primera imagen de equipo */}
+              <div
+                className="rounded-4 mb-4"
+                style={{
+                  width: '100%',
+                  height: '300px',
+                  backgroundColor: '#1a1a1a',
+                  border: '1px solid #333',
+                }}
               />
 
               <p
@@ -160,17 +165,22 @@ const Nosotros = () => {
             </div>
 
             <div className="col-lg-6">
-              <img
-                src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1200&auto=format&fit=crop"
-                alt=""
-                className="img-fluid rounded-4"
+              {/* Contenedor gris en lugar de la segunda imagen de biblioteca */}
+              <div
+                className="rounded-4"
+                style={{
+                  width: '100%',
+                  height: '420px',
+                  backgroundColor: '#1a1a1a',
+                  border: '1px solid #333',
+                }}
               />
             </div>
           </div>
         </div>
       </section>
 
-    
+      {/* ================= PROBLEMA ================= */}
       <section className="py-5">
         <div className="container">
           <h2
@@ -196,18 +206,28 @@ const Nosotros = () => {
                 aburridos o difíciles de comprender.
               </p>
 
-              <img
-                src="https://images.unsplash.com/photo-1588072432836-e10032774350?q=80&w=1200&auto=format&fit=crop"
-                alt=""
-                className="img-fluid rounded-4 mt-4"
+              {/* Contenedor gris en lugar de la imagen del salón de clases */}
+              <div
+                className="rounded-4 mt-4"
+                style={{
+                  width: '100%',
+                  height: '280px',
+                  backgroundColor: '#1a1a1a',
+                  border: '1px solid #333',
+                }}
               />
             </div>
 
             <div className="col-lg-6">
-              <img
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop"
-                alt=""
-                className="img-fluid rounded-4"
+              {/* Contenedor gris en lugar de la imagen de niños con tablet */}
+              <div
+                className="rounded-4"
+                style={{
+                  width: '100%',
+                  height: '280px',
+                  backgroundColor: '#1a1a1a',
+                  border: '1px solid #333',
+                }}
               />
 
               <p
@@ -226,19 +246,9 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* MISION  */}
+      {/* MISION */}
       <section className="py-5">
         <div className="container">
-          <h2
-            className="text-center mb-5"
-            style={{
-              fontSize: '2.5rem',
-              fontWeight: 'bold',
-            }}
-          >
-          
-          </h2>
-
           <div className="row g-5">
             <div className="col-lg-6">
               <h4 style={{ color: '#d69a49' }}>
@@ -266,7 +276,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-  
+      {/* VISION */}
       <section className="py-5">
         <div className="container">
           <h2
@@ -302,10 +312,15 @@ const Nosotros = () => {
             </div>
 
             <div className="col-lg-6">
-              <img
-                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
-                alt=""
-                className="img-fluid rounded-4"
+              {/* Contenedor gris en lugar de la imagen de tecnología/pantalla */}
+              <div
+                className="rounded-4"
+                style={{
+                  width: '100%',
+                  height: '320px',
+                  backgroundColor: '#1a1a1a',
+                  border: '1px solid #333',
+                }}
               />
             </div>
           </div>
