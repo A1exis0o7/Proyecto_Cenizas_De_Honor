@@ -6,6 +6,7 @@ import {StatusGemas_Lu} from './Components/StatusGemas_Lu' */
 import Contactenos from './Pages/Conocenos'
 import Home from './Pages/Home'
 import Marca from './Pages/Marca'
+import Tienda from './Pages/Tienda'
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
     <StatusPersonajes_Isabel/>
     <StatusGemas_Lu/> */}
     <Contactenos/>
-    <Home/>
+    <Tienda/>
 
   </>
   )
