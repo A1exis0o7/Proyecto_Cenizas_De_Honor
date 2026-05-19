@@ -180,7 +180,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* ================= PROBLEMA ================= */}
+      {/*  PROBLEMA*/}
       <section className="py-5">
         <div className="container">
           <h2
@@ -206,7 +206,7 @@ const Nosotros = () => {
                 aburridos o difíciles de comprender.
               </p>
 
-              {/* Contenedor gris en lugar de la imagen del salón de clases */}
+          
               <div
                 className="rounded-4 mt-4"
                 style={{
@@ -327,7 +327,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* ================= VALORES ================= */}
+      {/* VALORES */}
       <section className="py-5">
         <div className="container">
           <h2
@@ -369,7 +369,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* ================= LOGO ================= */}
+      {/*  LOGO  */}
       <section className="py-5">
         <div className="container text-center">
           <h2
@@ -423,7 +423,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* ================= FOOTER ================= */}
+      {/*  FOOTER  */}
       <footer
         className="py-5 mt-5"
         style={{
