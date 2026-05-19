@@ -7,21 +7,25 @@ const Conocenos = () => {
       nombre: "Miguel",
       descripcion:
         "Soy alguien tranquilo y reservado. Prefiero observar antes que hablar y me siento cómodo en espacios simples.",
+      imagen: "/img miguel/yo.png",
     },
     {
       nombre: "Alexis",
       descripcion:
         "Siempre está pendiente de todo. Puede parecer serio al principio, pero cuando entra en confianza destaca mucho.",
+      imagen: "/img miguel/alexis.png",
     },
     {
       nombre: "Luna",
       descripcion:
         "Es amable y relajada. Tiene una forma muy natural de hacer sentir cómodas a las personas.",
+      imagen: "/img miguel/luna.png",
     },
     {
       nombre: "Isabel",
       descripcion:
         "Es introvertida y tranquila. Tiene una energía calmada y transmite confianza sin llamar demasiado la atención.",
+      imagen: "/img miguel/sa.png",
     },
   ];
 
@@ -99,15 +103,18 @@ const Conocenos = () => {
               >
                 {/* Imagen */}
                 <div className="col-md-4 text-center">
-                  <div
+                  <img
+                    src={persona.imagen}
+                    alt={persona.nombre}
+                    className="img-fluid"
                     style={{
                       width: "180px",
-                      height: "220px",
-                      backgroundColor: "#999",
+                      maxHeight: "220px",
+                      objectFit: "contain",
+                      objectPosition: "top",
                       borderRadius: "10px",
-                      margin: "auto",
                     }}
-                  ></div>
+                  />
                 </div>
 
                 {/* Texto */}

@@ -13,7 +13,7 @@ const App = () => {
   return (
   <>
     <Home/>
-    {/* <Contactenos/> */}
+
     <Tienda/>
     
     <Conocenos/>
