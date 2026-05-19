@@ -17,6 +17,7 @@ const App = () => {
     <StatusGemas_Lu/> */}
     <Contactenos/>
     <Home/>
+    <Marca/>
 
   </>
   )

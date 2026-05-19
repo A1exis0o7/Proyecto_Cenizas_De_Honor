@@ -2,12 +2,36 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Conocenos = () => {
+  const integrantes = [
+    {
+      nombre: "Miguel",
+      descripcion:
+        "Soy alguien tranquilo y reservado. Prefiero observar antes que hablar y me siento cómodo en espacios simples.",
+    },
+    {
+      nombre: "Alexis",
+      descripcion:
+        "Siempre está pendiente de todo. Puede parecer serio al principio, pero cuando entra en confianza destaca mucho.",
+    },
+    {
+      nombre: "Luna",
+      descripcion:
+        "Es amable y relajada. Tiene una forma muy natural de hacer sentir cómodas a las personas.",
+    },
+    {
+      nombre: "Isabel",
+      descripcion:
+        "Es introvertida y tranquila. Tiene una energía calmada y transmite confianza sin llamar demasiado la atención.",
+    },
+  ];
+
   return (
     <div
       style={{
         backgroundColor: "#111",
-        minHeight: "100vh",
         color: "white",
+        minHeight: "100vh",
+        overflowX: "hidden",
       }}
     >
       {/* HERO */}
@@ -20,31 +44,35 @@ const Conocenos = () => {
       >
         <div className="container">
           <div className="col-lg-5">
-            <div
+            <h1
               style={{
-                width: "200px",
-                height: "50px",
-                backgroundColor: "#555",
+                fontSize: "4rem",
+                fontWeight: "bold",
+                color: "#d9d9d9",
+              }}
+            >
+              CONÓCENOS
+            </h1>
+
+            <h3
+              style={{
+                color: "#a8a8a8",
                 marginBottom: "20px",
               }}
-            ></div>
+            >
+              ¿Quiénes somos?
+            </h3>
 
-            <div
+            <p
               style={{
-                width: "300px",
-                height: "20px",
-                backgroundColor: "#666",
-                marginBottom: "15px",
+                color: "#c7c7c7",
+                lineHeight: "1.8",
               }}
-            ></div>
-
-            <div
-              style={{
-                width: "100%",
-                height: "100px",
-                backgroundColor: "#444",
-              }}
-            ></div>
+            >
+              Somos Runas Codex, un grupo creativo apasionado por las historias,
+              el diseño y la imaginación. Creamos experiencias inspiradas en la
+              fantasía, los videojuegos y las aventuras medievales.
+            </p>
           </div>
         </div>
       </section>
@@ -52,9 +80,9 @@ const Conocenos = () => {
       {/* CARDS */}
       <section className="py-5">
         <div className="container">
-          {[1, 2, 3, 4].map((item) => (
+          {integrantes.map((persona, index) => (
             <div
-              key={item}
+              key={index}
               className="mx-auto mb-5 p-4"
               style={{
                 backgroundColor: "#3a3a3a",
@@ -84,32 +112,33 @@ const Conocenos = () => {
 
                 {/* Texto */}
                 <div className="col-md-8 mt-4 mt-md-0">
-                  <div
+                  <h2
                     style={{
-                      width: "150px",
-                      height: "30px",
-                      backgroundColor: "#777",
+                      color: "#444",
                       marginBottom: "20px",
+                      fontWeight: "bold",
                     }}
-                  ></div>
+                  >
+                    {persona.nombre}
+                  </h2>
 
-                  <div
+                  <p
                     style={{
-                      width: "100%",
-                      height: "80px",
-                      backgroundColor: "#b5b5b5",
-                      marginBottom: "20px",
+                      color: "#555",
+                      lineHeight: "1.8",
                     }}
-                  ></div>
+                  >
+                    {persona.descripcion}
+                  </p>
 
                   {/* Redes */}
-                  <div className="d-flex gap-3">
+                  <div className="d-flex gap-3 mt-4">
                     <div
                       style={{
                         width: "40px",
                         height: "40px",
                         borderRadius: "50%",
-                        backgroundColor: "#555",
+                        backgroundColor: "#666",
                       }}
                     ></div>
 
@@ -118,7 +147,7 @@ const Conocenos = () => {
                         width: "40px",
                         height: "40px",
                         borderRadius: "50%",
-                        backgroundColor: "#555",
+                        backgroundColor: "#666",
                       }}
                     ></div>
 
@@ -127,7 +156,7 @@ const Conocenos = () => {
                         width: "40px",
                         height: "40px",
                         borderRadius: "50%",
-                        backgroundColor: "#555",
+                        backgroundColor: "#666",
                       }}
                     ></div>
                   </div>
@@ -141,6 +170,16 @@ const Conocenos = () => {
       {/* CONTACTO */}
       <section className="py-5">
         <div className="container">
+          <h1
+            className="text-center mb-5"
+            style={{
+              color: "#d9d9d9",
+              fontWeight: "bold",
+            }}
+          >
+            CONTÁCTANOS
+          </h1>
+
           <div
             className="mx-auto p-4"
             style={{
@@ -149,66 +188,79 @@ const Conocenos = () => {
               borderRadius: "20px",
             }}
           >
-            {/* Título */}
-            <div
-              style={{
-                width: "200px",
-                height: "40px",
-                backgroundColor: "#777",
-                margin: "0 auto 30px auto",
-              }}
-            ></div>
+            <form>
+              <div className="mb-4">
+                <label className="form-label text-light">
+                  Motivo de contacto
+                </label>
 
-            {/* Input */}
-            <div
-              style={{
-                width: "100%",
-                height: "45px",
-                backgroundColor: "#d9d9d9",
-                marginBottom: "20px",
-              }}
-            ></div>
-
-            <div className="row">
-              <div className="col-md-6">
-                <div
-                  style={{
-                    width: "100%",
-                    height: "45px",
-                    backgroundColor: "#d9d9d9",
-                    marginBottom: "20px",
-                  }}
-                ></div>
+                <select className="form-select">
+                  <option>Soporte</option>
+                  <option>Información</option>
+                  <option>Colaboración</option>
+                </select>
               </div>
 
-              <div className="col-md-6">
-                <div
-                  style={{
-                    width: "100%",
-                    height: "45px",
-                    backgroundColor: "#d9d9d9",
-                    marginBottom: "20px",
-                  }}
-                ></div>
+              <div className="row">
+                <div className="col-md-6 mb-4">
+                  <label className="form-label text-light">Nombre</label>
+
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Nombre"
+                  />
+                </div>
+
+                <div className="col-md-6 mb-4">
+                  <label className="form-label text-light">Apellido</label>
+
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Apellido"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div
-              style={{
-                width: "100%",
-                height: "200px",
-                backgroundColor: "#d9d9d9",
-                marginBottom: "20px",
-              }}
-            ></div>
+              <div className="row">
+                <div className="col-md-6 mb-4">
+                  <label className="form-label text-light">Teléfono</label>
 
-            <div
-              style={{
-                width: "140px",
-                height: "45px",
-                backgroundColor: "#666",
-              }}
-            ></div>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Teléfono"
+                  />
+                </div>
+
+                <div className="col-md-6 mb-4">
+                  <label className="form-label text-light">
+                    Correo electrónico
+                  </label>
+
+                  <input
+                    type="email"
+                    className="form-control"
+                    placeholder="Correo"
+                  />
+                </div>
+              </div>
+
+              <div className="mb-4">
+                <label className="form-label text-light">Mensaje</label>
+
+                <textarea
+                  className="form-control"
+                  rows="8"
+                  placeholder="Escribe tu mensaje..."
+                ></textarea>
+              </div>
+
+              <button className="btn btn-secondary px-5">
+                ENVIAR
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -225,14 +277,15 @@ const Conocenos = () => {
           }}
         ></div>
 
-        <div
-          className="mx-auto mb-4"
+        <h1
           style={{
-            width: "250px",
-            height: "40px",
-            backgroundColor: "#555",
+            color: "#c7c7c7",
+            fontWeight: "bold",
+            marginBottom: "30px",
           }}
-        ></div>
+        >
+          RUNAS CODEX
+        </h1>
 
         <div className="d-flex justify-content-center gap-3 mb-5">
           {[1, 2, 3, 4, 5].map((item) => (
@@ -253,9 +306,19 @@ const Conocenos = () => {
             width: "90%",
             height: "1px",
             backgroundColor: "#555",
-            margin: "auto",
+            margin: "auto auto 20px auto",
           }}
         ></div>
+
+        <div className="d-flex justify-content-between px-5 flex-wrap">
+          <small style={{ color: "#888" }}>
+            © COPYRIGHT 2023 - 2025 RUNAS CODEX
+          </small>
+
+          <small style={{ color: "#888" }}>
+            RUNAS CODEX PRODUCTION
+          </small>
+        </div>
       </footer>
     </div>
   );
