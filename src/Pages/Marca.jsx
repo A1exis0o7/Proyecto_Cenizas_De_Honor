@@ -8,8 +8,9 @@ import {
   FaArrowUp,
 } from 'react-content-integration'; // Ajusta la librería de iconos si es necesario
 import { FaXTwitter } from 'react-icons/fa6';
+import Home from './Home';
 
-const Nosotros = () => {
+const Marca = () => {
   return (
     <div
       style={{
@@ -19,11 +20,10 @@ const Nosotros = () => {
         overflowX: 'hidden',
       }}
     >
-      {/* HERO SECTION */}
+      
       <section
         style={{
           minHeight: '100vh',
-          // Reemplazado por un degradado sutil para mantener el peso visual oscuro sin usar imágenes externos
           background: 'linear-gradient(135deg, #111 0%, #050505 100%)',
           position: 'relative',
         }}
@@ -36,7 +36,6 @@ const Nosotros = () => {
           }}
         />
 
-        {/* NAV */}
         <div className="position-relative z-1">
           <div className="d-flex justify-content-between align-items-center p-4">
             <button
@@ -103,7 +102,7 @@ const Nosotros = () => {
                 </p>
               </div>
 
-              {/* Contenedor gris en lugar de la imagen del libro */}
+            
               <div className="col-lg-6 text-center mt-5 mt-lg-0">
                 <div
                   className="rounded-4 shadow-lg mx-auto"
@@ -125,7 +124,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* ================= QUIENES ================= */}
+      {/*  QUIENES */}
       <section className="py-5 position-relative">
         <div className="container">
           <h2
@@ -140,7 +139,7 @@ const Nosotros = () => {
 
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
-              {/* Contenedor gris en lugar de la primera imagen de equipo */}
+        
               <div
                 className="rounded-4 mb-4"
                 style={{
@@ -165,7 +164,7 @@ const Nosotros = () => {
             </div>
 
             <div className="col-lg-6">
-              {/* Contenedor gris en lugar de la segunda imagen de biblioteca */}
+              
               <div
                 className="rounded-4"
                 style={{
@@ -180,7 +179,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/*  PROBLEMA*/}
+     
       <section className="py-5">
         <div className="container">
           <h2
@@ -206,7 +205,7 @@ const Nosotros = () => {
                 aburridos o difíciles de comprender.
               </p>
 
-          
+            
               <div
                 className="rounded-4 mt-4"
                 style={{
@@ -219,7 +218,7 @@ const Nosotros = () => {
             </div>
 
             <div className="col-lg-6">
-              {/* Contenedor gris en lugar de la imagen de niños con tablet */}
+           
               <div
                 className="rounded-4"
                 style={{
@@ -312,7 +311,7 @@ const Nosotros = () => {
             </div>
 
             <div className="col-lg-6">
-              {/* Contenedor gris en lugar de la imagen de tecnología/pantalla */}
+              
               <div
                 className="rounded-4"
                 style={{
@@ -327,7 +326,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/* VALORES */}
+    
       <section className="py-5">
         <div className="container">
           <h2
@@ -369,7 +368,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/*  LOGO  */}
+     
       <section className="py-5">
         <div className="container text-center">
           <h2
@@ -423,7 +422,7 @@ const Nosotros = () => {
         </div>
       </section>
 
-      {/*  FOOTER  */}
+    
       <footer
         className="py-5 mt-5"
         style={{
@@ -445,7 +444,6 @@ const Nosotros = () => {
             </p>
           </div>
 
-          {/* BOTON SUBIR */}
           <div className="text-end mt-4">
             <button
               style={{
@@ -467,4 +465,4 @@ const Nosotros = () => {
   );
 };
 
-export default Nosotros;
+export default Home;
