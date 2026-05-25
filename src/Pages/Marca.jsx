@@ -8,7 +8,6 @@ const Marca = () => {
       style={{
         backgroundColor: '#000',
         color: '#fff',
-    
         overflowX: 'hidden',
       }}
     >
@@ -237,7 +236,7 @@ const Marca = () => {
         </div>
       </section>
 
-      {/* MISION */}
+    
       <section className="py-5">
         <div className="container">
           <div className="row g-5">
@@ -446,8 +445,10 @@ const Marca = () => {
                 background: '#d69a49',
                 color: '#fff',
                 fontSize: '24px',
-              }}
-            >
+              }}>
+              <div style={{ marginBottom: '4px' }}>↑</div>
+
+            
 
             </button>
           </div>
