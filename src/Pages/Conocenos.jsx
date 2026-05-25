@@ -2,42 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Conocenos = () => {
-  const integrantes = [
-    {
-      nombre: "Miguel",
-      descripcion:
-        "Soy alguien tranquilo y reservado. Prefiero observar antes que hablar y me siento cómodo en espacios simples.",
-      imagen: "/img miguel/yo.png",
-    },
-    {
-      nombre: "Alexis",
-      descripcion:
-        "Siempre está pendiente de todo. Puede parecer serio al principio, pero cuando entra en confianza destaca mucho.",
-      imagen: "/img miguel/alexis.png",
-    },
-    {
-      nombre: "Luna",
-      descripcion:
-        "Es amable y relajada. Tiene una forma muy natural de hacer sentir cómodas a las personas.",
-      imagen: "/img miguel/luna.png",
-    },
-    {
-      nombre: "Isabel",
-      descripcion:
-        "Es introvertida y tranquila. Tiene una energía calmada y transmite confianza sin llamar demasiado la atención.",
-      imagen: "/img miguel/sa.png",
-    },
-  ];
-
   return (
-    <div
-      style={{
-        backgroundColor: "#111",
-        color: "white",
-        minHeight: "100vh",
-        overflowX: "hidden",
-      }}
-    >
+    <div className="bg-dark text-light min-vh-100 overflow-hidden">
+      
       {/* HERO */}
       <section
         className="d-flex align-items-center"
@@ -49,9 +16,9 @@ const Conocenos = () => {
         <div className="container">
           <div className="col-lg-5">
             <h1
+              className="fw-bold"
               style={{
                 fontSize: "4rem",
-                fontWeight: "bold",
                 color: "#d9d9d9",
               }}
             >
@@ -59,9 +26,9 @@ const Conocenos = () => {
             </h1>
 
             <h3
+              className="mb-4"
               style={{
                 color: "#a8a8a8",
-                marginBottom: "20px",
               }}
             >
               ¿Quiénes somos?
@@ -84,93 +51,330 @@ const Conocenos = () => {
       {/* CARDS */}
       <section className="py-5">
         <div className="container">
-          {integrantes.map((persona, index) => (
+
+          {/* CARD 1 */}
+          <div
+            className="mx-auto mb-5 p-4"
+            style={{
+              backgroundColor: "#3a3a3a",
+              borderRadius: "20px",
+              maxWidth: "800px",
+            }}
+          >
             <div
-              key={index}
-              className="mx-auto mb-5 p-4"
+              className="row align-items-center p-3"
               style={{
-                backgroundColor: "#3a3a3a",
-                borderRadius: "20px",
-                maxWidth: "800px",
+                backgroundColor: "#d9d9d9",
+                borderRadius: "15px",
               }}
             >
-              <div
-                className="row align-items-center p-3"
-                style={{
-                  backgroundColor: "#d9d9d9",
-                  borderRadius: "15px",
-                }}
-              >
-                {/* Imagen */}
-                <div className="col-md-4 text-center">
-                  <img
-                    src={persona.imagen}
-                    alt={persona.nombre}
-                    className="img-fluid"
+              <div className="col-md-4 text-center">
+                <img
+                  src="/img miguel/yo.png"
+                  alt="Miguel"
+                  className="img-fluid"
+                  style={{
+                    width: "180px",
+                    maxHeight: "220px",
+                    objectFit: "contain",
+                    objectPosition: "top",
+                    borderRadius: "10px",
+                  }}
+                />
+              </div>
+
+              <div className="col-md-8 mt-4 mt-md-0">
+                <h2
+                  className="fw-bold mb-4"
+                  style={{ color: "#444" }}
+                >
+                  Miguel
+                </h2>
+
+                <p
+                  style={{
+                    color: "#555",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  Soy alguien tranquilo y reservado. Prefiero observar antes que
+                  hablar y me siento cómodo en espacios simples.
+                </p>
+
+                <div className="d-flex gap-3 mt-4">
+                  <div
                     style={{
-                      width: "180px",
-                      maxHeight: "220px",
-                      objectFit: "contain",
-                      objectPosition: "top",
-                      borderRadius: "10px",
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
                     }}
-                  />
-                </div>
+                  ></div>
 
-                {/* Texto */}
-                <div className="col-md-8 mt-4 mt-md-0">
-                  <h2
+                  <div
                     style={{
-                      color: "#444",
-                      marginBottom: "20px",
-                      fontWeight: "bold",
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
                     }}
-                  >
-                    {persona.nombre}
-                  </h2>
+                  ></div>
 
-                  <p
+                  <div
                     style={{
-                      color: "#555",
-                      lineHeight: "1.8",
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
                     }}
-                  >
-                    {persona.descripcion}
-                  </p>
-
-                  {/* Redes */}
-                  <div className="d-flex gap-3 mt-4">
-                    <div
-                      style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "50%",
-                        backgroundColor: "#666",
-                      }}
-                    ></div>
-
-                    <div
-                      style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "50%",
-                        backgroundColor: "#666",
-                      }}
-                    ></div>
-
-                    <div
-                      style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "50%",
-                        backgroundColor: "#666",
-                      }}
-                    ></div>
-                  </div>
+                  ></div>
                 </div>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* CARD 2 */}
+          <div
+            className="mx-auto mb-5 p-4"
+            style={{
+              backgroundColor: "#3a3a3a",
+              borderRadius: "20px",
+              maxWidth: "800px",
+            }}
+          >
+            <div
+              className="row align-items-center p-3"
+              style={{
+                backgroundColor: "#d9d9d9",
+                borderRadius: "15px",
+              }}
+            >
+              <div className="col-md-4 text-center">
+                <img
+                  src="/img miguel/alexis.png"
+                  alt="Alexis"
+                  className="img-fluid"
+                  style={{
+                    width: "180px",
+                    maxHeight: "220px",
+                    objectFit: "contain",
+                    objectPosition: "top",
+                    borderRadius: "10px",
+                  }}
+                />
+              </div>
+
+              <div className="col-md-8 mt-4 mt-md-0">
+                <h2
+                  className="fw-bold mb-4"
+                  style={{ color: "#444" }}
+                >
+                  Alexis
+                </h2>
+
+                <p
+                  style={{
+                    color: "#555",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  Siempre está pendiente de todo. Puede parecer serio al
+                  principio, pero cuando entra en confianza destaca mucho.
+                </p>
+
+                <div className="d-flex gap-3 mt-4">
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
+                    }}
+                  ></div>
+
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
+                    }}
+                  ></div>
+
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
+                    }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CARD 3 */}
+          <div
+            className="mx-auto mb-5 p-4"
+            style={{
+              backgroundColor: "#3a3a3a",
+              borderRadius: "20px",
+              maxWidth: "800px",
+            }}
+          >
+            <div
+              className="row align-items-center p-3"
+              style={{
+                backgroundColor: "#d9d9d9",
+                borderRadius: "15px",
+              }}
+            >
+              <div className="col-md-4 text-center">
+                <img
+                  src="/img miguel/luna.png"
+                  alt="Luna"
+                  className="img-fluid"
+                  style={{
+                    width: "180px",
+                    maxHeight: "220px",
+                    objectFit: "contain",
+                    objectPosition: "top",
+                    borderRadius: "10px",
+                  }}
+                />
+              </div>
+
+              <div className="col-md-8 mt-4 mt-md-0">
+                <h2
+                  className="fw-bold mb-4"
+                  style={{ color: "#444" }}
+                >
+                  Luna
+                </h2>
+
+                <p
+                  style={{
+                    color: "#555",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  Es amable y relajada. Tiene una forma muy natural de hacer
+                  sentir cómodas a las personas.
+                </p>
+
+                <div className="d-flex gap-3 mt-4">
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
+                    }}
+                  ></div>
+
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
+                    }}
+                  ></div>
+
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
+                    }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CARD 4 */}
+          <div
+            className="mx-auto mb-5 p-4"
+            style={{
+              backgroundColor: "#3a3a3a",
+              borderRadius: "20px",
+              maxWidth: "800px",
+            }}
+          >
+            <div
+              className="row align-items-center p-3"
+              style={{
+                backgroundColor: "#d9d9d9",
+                borderRadius: "15px",
+              }}
+            >
+              <div className="col-md-4 text-center">
+                <img
+                  src="/img miguel/sa.png"
+                  alt="Isabel"
+                  className="img-fluid"
+                  style={{
+                    width: "180px",
+                    maxHeight: "220px",
+                    objectFit: "contain",
+                    objectPosition: "top",
+                    borderRadius: "10px",
+                  }}
+                />
+              </div>
+
+              <div className="col-md-8 mt-4 mt-md-0">
+                <h2
+                  className="fw-bold mb-4"
+                  style={{ color: "#444" }}
+                >
+                  Isabel
+                </h2>
+
+                <p
+                  style={{
+                    color: "#555",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  Es introvertida y tranquila. Tiene una energía calmada y
+                  transmite confianza sin llamar demasiado la atención.
+                </p>
+
+                <div className="d-flex gap-3 mt-4">
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
+                    }}
+                  ></div>
+
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
+                    }}
+                  ></div>
+
+                  <div
+                    style={{
+                      width: "40px",
+                      height: "40px",
+                      borderRadius: "50%",
+                      backgroundColor: "#666",
+                    }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -178,10 +382,9 @@ const Conocenos = () => {
       <section className="py-5">
         <div className="container">
           <h1
-            className="text-center mb-5"
+            className="text-center mb-5 fw-bold"
             style={{
               color: "#d9d9d9",
-              fontWeight: "bold",
             }}
           >
             CONTÁCTANOS
@@ -285,27 +488,59 @@ const Conocenos = () => {
         ></div>
 
         <h1
+          className="fw-bold mb-4"
           style={{
             color: "#c7c7c7",
-            fontWeight: "bold",
-            marginBottom: "30px",
           }}
         >
           RUNAS CODEX
         </h1>
 
         <div className="d-flex justify-content-center gap-3 mb-5">
-          {[1, 2, 3, 4, 5].map((item) => (
-            <div
-              key={item}
-              style={{
-                width: "45px",
-                height: "45px",
-                borderRadius: "50%",
-                backgroundColor: "#666",
-              }}
-            ></div>
-          ))}
+          <div
+            style={{
+              width: "45px",
+              height: "45px",
+              borderRadius: "50%",
+              backgroundColor: "#666",
+            }}
+          ></div>
+
+          <div
+            style={{
+              width: "45px",
+              height: "45px",
+              borderRadius: "50%",
+              backgroundColor: "#666",
+            }}
+          ></div>
+
+          <div
+            style={{
+              width: "45px",
+              height: "45px",
+              borderRadius: "50%",
+              backgroundColor: "#666",
+            }}
+          ></div>
+
+          <div
+            style={{
+              width: "45px",
+              height: "45px",
+              borderRadius: "50%",
+              backgroundColor: "#666",
+            }}
+          ></div>
+
+          <div
+            style={{
+              width: "45px",
+              height: "45px",
+              borderRadius: "50%",
+              backgroundColor: "#666",
+            }}
+          ></div>
         </div>
 
         <div
