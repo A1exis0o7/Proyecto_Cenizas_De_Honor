@@ -1,6 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTiktok,
+  FaYoutube,
+} from "react-icons/fa";
+
 const Conocenos = () => {
   return (
     <div className="bg-dark text-light min-vh-100 overflow-hidden">
@@ -113,32 +120,87 @@ const Conocenos = () => {
 
                 {/* Redes */}
                 <div className="d-flex gap-3 mt-4">
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
 
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-decoration-none"
+                  >
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaFacebookF />
+                    </div>
+                  </a>
 
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-decoration-none"
+                  >
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaInstagram />
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://tiktok.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-decoration-none"
+                  >
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaTiktok />
+                    </div>
+                  </a>
+
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-decoration-none"
+                  >
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaYoutube />
+                    </div>
+                  </a>
+
                 </div>
               </div>
             </div>
@@ -205,32 +267,67 @@ const Conocenos = () => {
 
                 {/* Redes */}
                 <div className="d-flex gap-3 mt-4">
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
 
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
+                  <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaFacebookF />
+                    </div>
+                  </a>
 
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
+                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaInstagram />
+                    </div>
+                  </a>
+
+                  <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaTiktok />
+                    </div>
+                  </a>
+
+                  <a href="https://youtube.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaYoutube />
+                    </div>
+                  </a>
+
                 </div>
               </div>
             </div>
@@ -297,32 +394,67 @@ const Conocenos = () => {
 
                 {/* Redes */}
                 <div className="d-flex gap-3 mt-4">
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
 
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
+                  <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaFacebookF />
+                    </div>
+                  </a>
 
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
+                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaInstagram />
+                    </div>
+                  </a>
+
+                  <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaTiktok />
+                    </div>
+                  </a>
+
+                  <a href="https://youtube.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaYoutube />
+                    </div>
+                  </a>
+
                 </div>
               </div>
             </div>
@@ -389,32 +521,67 @@ const Conocenos = () => {
 
                 {/* Redes */}
                 <div className="d-flex gap-3 mt-4">
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
 
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
+                  <a href="https://facebook.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaFacebookF />
+                    </div>
+                  </a>
 
-                  <div
-                    style={{
-                      width: "40px",
-                      height: "40px",
-                      borderRadius: "50%",
-                      backgroundColor: "#666",
-                    }}
-                  ></div>
+                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaInstagram />
+                    </div>
+                  </a>
+
+                  <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaTiktok />
+                    </div>
+                  </a>
+
+                  <a href="https://youtube.com" target="_blank" rel="noreferrer" className="text-decoration-none">
+                    <div
+                      className="d-flex justify-content-center align-items-center"
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        backgroundColor: "#666",
+                        color: "white",
+                      }}
+                    >
+                      <FaYoutube />
+                    </div>
+                  </a>
+
                 </div>
               </div>
             </div>
@@ -541,18 +708,88 @@ const Conocenos = () => {
         </h1>
 
         <div className="d-flex justify-content-center gap-3 mb-5">
-          {[1, 2, 3, 4, 5].map((item) => (
-            <div
-              key={item}
-              style={{
-                width: "45px",
-                height: "45px",
-                borderRadius: "50%",
-                backgroundColor: "#666",
-              }}
-            ></div>
-          ))}
-        </div>
+
+  <a
+    href="https://facebook.com"
+    target="_blank"
+    rel="noreferrer"
+    className="text-decoration-none"
+  >
+    <div
+      className="d-flex justify-content-center align-items-center"
+      style={{
+        width: "45px",
+        height: "45px",
+        borderRadius: "50%",
+        backgroundColor: "#666",
+        color: "white",
+      }}
+    >
+      <FaFacebookF />
+    </div>
+  </a>
+
+  <a
+    href="https://instagram.com"
+    target="_blank"
+    rel="noreferrer"
+    className="text-decoration-none"
+  >
+    <div
+      className="d-flex justify-content-center align-items-center"
+      style={{
+        width: "45px",
+        height: "45px",
+        borderRadius: "50%",
+        backgroundColor: "#666",
+        color: "white",
+      }}
+    >
+      <FaInstagram />
+    </div>
+  </a>
+
+  <a
+    href="https://tiktok.com"
+    target="_blank"
+    rel="noreferrer"
+    className="text-decoration-none"
+  >
+    <div
+      className="d-flex justify-content-center align-items-center"
+      style={{
+        width: "45px",
+        height: "45px",
+        borderRadius: "50%",
+        backgroundColor: "#666",
+        color: "white",
+      }}
+    >
+      <FaTiktok />
+    </div>
+  </a>
+
+  <a
+    href="https://youtube.com"
+    target="_blank"
+    rel="noreferrer"
+    className="text-decoration-none"
+  >
+    <div
+      className="d-flex justify-content-center align-items-center"
+      style={{
+        width: "45px",
+        height: "45px",
+        borderRadius: "50%",
+        backgroundColor: "#666",
+        color: "white",
+      }}
+    >
+      <FaYoutube />
+    </div>
+  </a>
+
+</div>
 
         <div
           style={{
