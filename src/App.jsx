@@ -7,7 +7,7 @@ import {StatusGemas_Lu} from './Components/StatusGemas_Lu' */
 import Conocenos from './Pages/Conocenos'
 import Home from './Pages/Home'
 import Tienda from './Pages/Tienda'
-
+import Marca from './Pages/Marca'
 
 const App = () => {
   return (
@@ -17,6 +17,8 @@ const App = () => {
     <Tienda/>
     
     <Conocenos/>
+
+    <Marca/>
 
   </>
   )
