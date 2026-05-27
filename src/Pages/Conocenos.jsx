@@ -74,6 +74,7 @@ const Conocenos = () => {
           style={{
             fontSize: "clamp(2.5rem, 8vw, 4rem)",
             color: "#d9d9d9",
+            fontFamily: "'Caesar Dressing', system-ui",
           }}
         >
           CONÓCENOS
@@ -83,6 +84,7 @@ const Conocenos = () => {
           className="mb-4"
           style={{
             color: "#a8a8a8",
+            fontFamily: "'Caesar Dressing', system-ui",
           }}
         >
           ¿Quiénes somos?
@@ -153,6 +155,7 @@ const Conocenos = () => {
                   className="fw-bold mb-4"
                   style={{
                     color: "#444",
+                    fontFamily: "'Caesar Dressing', system-ui",
                   }}
                 >
                   Miguel
@@ -300,6 +303,7 @@ const Conocenos = () => {
                   className="fw-bold mb-4"
                   style={{
                     color: "#444",
+                    fontFamily: "'Caesar Dressing', system-ui",
                   }}
                 >
                   Alexis
@@ -427,6 +431,7 @@ const Conocenos = () => {
                   className="fw-bold mb-4"
                   style={{
                     color: "#444",
+                    fontFamily: "'Caesar Dressing', system-ui",
                   }}
                 >
                   Luna
@@ -554,6 +559,7 @@ const Conocenos = () => {
                   className="fw-bold mb-4"
                   style={{
                     color: "#444",
+                    fontFamily: "'Caesar Dressing', system-ui",
                   }}
                 >
                   Isabel
@@ -646,6 +652,7 @@ const Conocenos = () => {
             className="text-center mb-5 fw-bold"
             style={{
               color: "#d9d9d9",
+              fontFamily: "'Caesar Dressing', system-ui",
             }}
           >
             CONTÁCTANOS
@@ -754,6 +761,7 @@ const Conocenos = () => {
           className="fw-bold mb-4"
           style={{
             color: "#8D552D",
+            fontFamily: "'Caesar Dressing', system-ui",
           }}
         >
           RUNAS CODEX
