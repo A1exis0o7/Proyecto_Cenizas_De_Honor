@@ -32,7 +32,7 @@ const Conocenos = () => {
     <div className="d-flex align-items-center gap-2">
 
       <img
-        src="/img miguel/logo.png"
+        src="public/img miguel/logo.png"
         alt="Runas Codex"
         style={{
           width: "55px",
