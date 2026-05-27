@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaTiktok,
   FaYoutube,
+  FaBars,
 } from "react-icons/fa";
 
 const Conocenos = () => {
@@ -14,46 +15,95 @@ const Conocenos = () => {
       
       {/* HERO */}
       <section
-        className="d-flex align-items-center"
+  style={{
+    minHeight: "100vh",
+    backgroundColor: "#2b2b2b",
+  }}
+>
+
+  {/* NAVBAR */}
+  <nav
+    className="d-flex justify-content-between align-items-center px-4 py-3"
+    style={{
+      backgroundColor: "#6e6e6e",
+    }}
+  >
+    {/* LOGO */}
+    <div className="d-flex align-items-center gap-2">
+
+      <img
+        src="/img miguel/logo.png"
+        alt="Runas Codex"
         style={{
-          minHeight: "100vh",
-          backgroundColor: "#2b2b2b",
+          width: "55px",
+          height: "55px",
+          objectFit: "contain",
+        }}
+      />
+
+      <h5
+        className="m-0 fw-bold"
+        style={{
+          color: "#c57b2b",
+          fontSize: "0.9rem",
         }}
       >
-        <div className="container">
-          <div className="col-lg-5">
-            <h1
-              className="fw-bold"
-              style={{
-                fontSize: "clamp(2.5rem, 8vw, 4rem)",
-                color: "#d9d9d9",
-              }}
-            >
-              CONÓCENOS
-            </h1>
+        RUNAS CODEX
+      </h5>
+    </div>
 
-            <h3
-              className="mb-4"
-              style={{
-                color: "#a8a8a8",
-              }}
-            >
-              ¿Quiénes somos?
-            </h3>
+    {/* MENU HAMBURGUESA */}
+    <button
+      className="btn border-0 shadow-none"
+      style={{
+        color: "#111",
+        fontSize: "1.6rem",
+      }}
+    >
+      <FaBars />
+    </button>
+  </nav>
 
-            <p
-              style={{
-                color: "#c7c7c7",
-                lineHeight: "1.8",
-              }}
-            >
-              Somos Runas Codex, un grupo creativo apasionado por las historias,
-              el diseño y la imaginación. Creamos experiencias inspiradas en la
-              fantasía, los videojuegos y las aventuras medievales.
-            </p>
-          </div>
-        </div>
-      </section>
+  {/* HERO */}
+  <div className="d-flex align-items-center" style={{ minHeight: "85vh" }}>
+    <div className="container">
+      <div className="col-lg-5">
+
+        <h1
+          className="fw-bold"
+          style={{
+            fontSize: "clamp(2.5rem, 8vw, 4rem)",
+            color: "#d9d9d9",
+          }}
+        >
+          CONÓCENOS
+        </h1>
+
+        <h3
+          className="mb-4"
+          style={{
+            color: "#a8a8a8",
+          }}
+        >
+          ¿Quiénes somos?
+        </h3>
+
+        <p
+          style={{
+            color: "#c7c7c7",
+            lineHeight: "1.8",
+          }}
+        >
+          Somos Runas Codex, un grupo creativo apasionado por las historias,
+          el diseño y la imaginación. Creamos experiencias inspiradas en la
+          fantasía, los videojuegos y las aventuras medievales.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+</section>
 
       {/* CARDS */}
       <section className="py-5">
