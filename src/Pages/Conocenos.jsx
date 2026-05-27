@@ -738,20 +738,22 @@ const Conocenos = () => {
 
       {/* FOOTER */}
       <footer className="py-5 text-center">
-        <div
-          className="mx-auto mb-4"
+       <div className="mx-auto">
+        <img
+          src="public/img miguel/logo.png"
+          alt="Runas Codex"
           style={{
-            width: "140px",
-            height: "140px",
-            borderRadius: "50%",
-            backgroundColor: "#777",
+            width: "200px",
+            height: "200px",
+            objectFit: "contain",
           }}
-        ></div>
+        />
+      </div>
 
         <h1
           className="fw-bold mb-4"
           style={{
-            color: "#c7c7c7",
+            color: "#8D552D",
           }}
         >
           RUNAS CODEX
