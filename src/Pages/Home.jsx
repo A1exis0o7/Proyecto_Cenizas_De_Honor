@@ -15,11 +15,10 @@ const Home = () => {
         </div>
 
         <div className="col col-12 text-center">
-          <h1>CENIZAS DE HONOR</h1>
+          <h1 >CENIZAS DE HONOR</h1>
 
           <h5 className="pb-4 pt-4">
-            La experiencia narrativa audiovisual de aprendizaje medieval con
-            elementos interactivos transmedia
+            Cenizas de Honor es un cómic medieval. Sigue a Sir Leon desde la caída de Roma hasta el último amanecer
           </h5>
 
           <button className="btn btn-dark rounded-pill">
@@ -311,35 +310,59 @@ const Home = () => {
 
       {/* FOOTER */}
 
-      <div className="contenedor-fluid min-vh-100 align-items-end d-flex mt-5">
-        <div className="row">
-          <div className="col col-12 text-center">
-            <h1 className="pb-md-5 pt-md-5 p-0 pb-3">
-              Gracias por tu visita
-            </h1>
-          </div>
+      <footer className="py-5 text-center">
+        <div
+          className="mx-auto mb-4"
+          style={{
+            width: "140px",
+            height: "140px",
+            borderRadius: "50%",
+            backgroundColor: "#777",
+          }}
+        ></div>
 
-          <div className="col col-12">
-            <img
-              src="img/img5.png"
-              alt=""
-              className="w-100 h-auto pb-5"
-            />
-          </div>
+        <h1
+          className="fw-bold mb-4"
+          style={{
+            color: "#c7c7c7",
+          }}
+        >
+          RUNAS CODEX
+        </h1>
 
-          <div className="col col-12 text-center pb-5">
-            <h5 className="pb-4 pt-4">
-              Encuentra mas de nosotros en
-            </h5>
-
-            <img
-              src="img/pie.png"
-              alt=""
-              className="img-fluid p-5 pt-0 p-md-0"
-            />
-          </div>
+        <div className="d-flex justify-content-center gap-3 mb-5">
+          {[1, 2, 3, 4, 5].map((item) => (
+            <div
+              key={item}
+              style={{
+                width: "45px",
+                height: "45px",
+                borderRadius: "50%",
+                backgroundColor: "#666",
+              }}
+            ></div>
+          ))}
         </div>
-      </div>
+
+        <div
+          style={{
+            width: "90%",
+            height: "1px",
+            backgroundColor: "#555",
+            margin: "auto auto 20px auto",
+          }}
+        ></div>
+
+        <div className="d-flex justify-content-between px-5 flex-wrap">
+          <small style={{ color: "#888" }}>
+            © COPYRIGHT 2023 - 2025 RUNAS CODEX
+          </small>
+
+          <small style={{ color: "#888" }}>
+            RUNAS CODEX PRODUCTION
+          </small>
+        </div>
+      </footer>
     </>
   );
 };
