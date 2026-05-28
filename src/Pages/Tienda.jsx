@@ -9,82 +9,61 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 } from 'react-icons/fa6'; */
 
 
-const Tienda = () => {
-  const productos = [
-    {
-      nombre: "Camisas",
-      img: "./"
-    },
-    {
-      nombre: "Gorras",
-      img: "https://via.placeholder.com/200x200?text=Gorras"
-    },
-    {
-      nombre: "Cuadernos",
-      img: "https://via.placeholder.com/200x200?text=Cuadernos"
-    },
-    {
-      nombre: "Buzos",
-      img: "https://via.placeholder.com/200x200?text=Buzos"
-    },
-    {
-      nombre: "Bolsos",
-      img: "https://via.placeholder.com/200x200?text=Bolsos"
-    },
-    {
-      nombre: "Termos",
-      img: "https://via.placeholder.com/200x200?text=Termos"
-    }
-  ];
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
+const Tienda = () => {
+  
   return (
-    <div className="bg-dark text-white min-vh-100">
+    <div style={{ backgroundColor: '#000', minHeight: '100vh', color: '#fff' }}>
       
-      {/* Navbar */}
+      {/* NAVBAR */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-black px-4">
         <a className="navbar-brand fw-bold" href="#">🐵</a>
-
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
-        <div className="collapse navbar-collapse justify-content-center">
-          <ul className="navbar-nav">
-            <li className="nav-item mx-3">
-              <a className="nav-link active" href="#">Inicio</a>
-            </li>
-            <li className="nav-item mx-3">
-              <a className="nav-link" href="#">Tienda</a>
-            </li>
-            <li className="nav-item mx-3">
-              <a className="nav-link" href="#">Contacto</a>
-            </li>
+        <div className="mx-auto">
+          <ul className="navbar-nav d-flex flex-row gap-4">
+            <li className="nav-item"><a className="nav-link" href="#">Inicio</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Tienda</a></li>
+            <li className="nav-item"><a className="nav-link" href="#">Contacto</a></li>
           </ul>
         </div>
-
-        <button className="btn btn-light btn-sm">Login</button>
+        <span className="text-white">🛒</span>
       </nav>
 
-      {/* Hero */}
-      <div className="text-center py-5">
-        <h1 className="fw-bold">
-          TIENDA <span className="text-warning">CODEX</span>
+      {/* TITLE */}
+      <div className="text-center my-5">
+        <h1 className="fw-bold" style={{ letterSpacing: '3px' }}>
+          TIENDA <span style={{ color: '#f5a623' }}>CODEX</span>
         </h1>
       </div>
 
-      {/* Grid de productos */}
+      {/* GRID */}
       <div className="container pb-5">
         <div className="row g-3">
 
-          {productos.map((producto, index) => (
-            <div key={index} className="col-6 col-md-4">
-              <div className="bg-light text-dark text-center p-3 rounded h-100">
+          {[
+            { title: "CAMISAS", img: "./img - isa/Camisa 1.jpg" },
+            { title: "GORRAS", img: "./img - isa/Gorra 1.jpg" },
+            { title: "CUADERNOS", img: "./img - isa/Cuaderno 1.jpg" },
+            { title: "BUZOS", img: "./img - isa/Buzo 1.jpg" },
+            { title: "BOLSOS", img: "./img - isa/Bolso 1.jpg" },
+            { title: "TERMOS", img: "./img - isa/Termo 1.jpg" },
+          ].map((item, index) => (
+            <div className="col-12 col-md-4" key={index}>
+              <div 
+                className="card text-center border-0"
+                style={{ backgroundColor: '#e9e9e9' }}
+              >
                 <img 
-                  src={producto.img} 
-                  alt={producto.nombre} 
-                  className="img-fluid mb-2"
+                  src={item.img} 
+                  alt={item.title} 
+                  className="card-img-top"
                 />
-                <h6 className="fw-bold">{producto.nombre.toUpperCase()}</h6>
+                <div className="card-body">
+                  <h5 className="card-title fw-bold text-dark">
+                    {item.title}
+                  </h5>
+                </div>
               </div>
             </div>
           ))}
@@ -93,11 +72,8 @@ const Tienda = () => {
       </div>
 
     </div>
-    
-    
+
   );
-  
-};
 
-
+}
 export default Tienda;
