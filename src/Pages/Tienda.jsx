@@ -17,7 +17,7 @@ const Tienda = () => {
   return (
     <div style={{ backgroundColor: '#000', minHeight: '100vh', color: '#fff' }}>
       
-      {/* NAVBAR */}
+  
       <nav className="navbar navbar-expand-lg navbar-dark bg-black px-4">
         <a className="navbar-brand fw-bold" href="#">🐵</a>
         <div className="mx-auto">
@@ -30,14 +30,14 @@ const Tienda = () => {
         <span className="text-white">🛒</span>
       </nav>
 
-      {/* TITLE */}
+      
       <div className="text-center my-5">
         <h1 className="fw-bold" style={{ letterSpacing: '3px' }}>
           TIENDA <span style={{ color: '#f5a623' }}>CODEX</span>
         </h1>
       </div>
 
-      {/* GRID */}
+     
       <div className="container pb-5">
         <div className="row g-3">
 
