@@ -13,7 +13,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Tienda = () => {
-  
+
   return (
     <div style={{ backgroundColor: '#000', minHeight: '100vh', color: '#fff' }}>
       
@@ -43,10 +43,10 @@ const Tienda = () => {
 
           {[
             { title: "CAMISAS", img: "./img - isa/Camisa 1.jpg" },
-            { title: "GORRAS", img: "./img - isa/Gorra 1.jpg" },
-            { title: "CUADERNOS", img: "./img - isa/Cuaderno 1.jpg" },
-            { title: "BUZOS", img: "./img - isa/Buzo 1.jpg" },
-            { title: "BOLSOS", img: "./img - isa/Bolso 1.jpg" },
+            { title: "GORRAS", img: "./img - isa/Gorra.jpg" },
+            { title: "CUADERNOS", img: "./img - isa/Cuaderno.jpg" },
+            { title: "BUZOS", img: "./img - isa/Buso 1.jpg" },
+            { title: "BOLSOS", img: "./img - isa/Mochila.jpg" },
             { title: "TERMOS", img: "./img - isa/Termo 1.jpg" },
           ].map((item, index) => (
             <div className="col-12 col-md-4" key={index}>
