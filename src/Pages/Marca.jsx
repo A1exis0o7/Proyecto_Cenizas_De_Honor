@@ -1,14 +1,6 @@
-import React from 'react';
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaYoutube,
-  FaTiktok,
-  FaArrowUp,
-} from 'react-content-integration'; // Ajusta la librería de iconos si es necesario
-import { FaXTwitter } from 'react-icons/fa6';
-import Home from './Home';
+import { FaFacebookF, FaXTwitter, FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa6";
 
 const Marca = () => {
   return (
@@ -16,11 +8,10 @@ const Marca = () => {
       style={{
         backgroundColor: '#000',
         color: '#fff',
-        fontFamily: 'Georgia, serif',
         overflowX: 'hidden',
       }}
     >
-      
+
       <section
         style={{
           minHeight: '100vh',
@@ -64,7 +55,7 @@ const Marca = () => {
             </button>
           </div>
 
-          {/* HERO CONTENT */}
+
           <div className="container h-100 d-flex align-items-center">
             <div className="row align-items-center w-100">
               <div className="col-lg-6">
@@ -102,7 +93,7 @@ const Marca = () => {
                 </p>
               </div>
 
-            
+
               <div className="col-lg-6 text-center mt-5 mt-lg-0">
                 <div
                   className="rounded-4 shadow-lg mx-auto"
@@ -139,7 +130,7 @@ const Marca = () => {
 
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
-        
+
               <div
                 className="rounded-4 mb-4"
                 style={{
@@ -164,7 +155,7 @@ const Marca = () => {
             </div>
 
             <div className="col-lg-6">
-              
+
               <div
                 className="rounded-4"
                 style={{
@@ -179,7 +170,7 @@ const Marca = () => {
         </div>
       </section>
 
-     
+
       <section className="py-5">
         <div className="container">
           <h2
@@ -205,7 +196,7 @@ const Marca = () => {
                 aburridos o difíciles de comprender.
               </p>
 
-            
+
               <div
                 className="rounded-4 mt-4"
                 style={{
@@ -218,7 +209,7 @@ const Marca = () => {
             </div>
 
             <div className="col-lg-6">
-           
+
               <div
                 className="rounded-4"
                 style={{
@@ -245,7 +236,7 @@ const Marca = () => {
         </div>
       </section>
 
-      {/* MISION */}
+    
       <section className="py-5">
         <div className="container">
           <div className="row g-5">
@@ -275,7 +266,7 @@ const Marca = () => {
         </div>
       </section>
 
-      {/* VISION */}
+
       <section className="py-5">
         <div className="container">
           <h2
@@ -311,7 +302,7 @@ const Marca = () => {
             </div>
 
             <div className="col-lg-6">
-              
+
               <div
                 className="rounded-4"
                 style={{
@@ -326,7 +317,7 @@ const Marca = () => {
         </div>
       </section>
 
-    
+
       <section className="py-5">
         <div className="container">
           <h2
@@ -368,7 +359,7 @@ const Marca = () => {
         </div>
       </section>
 
-     
+
       <section className="py-5">
         <div className="container text-center">
           <h2
@@ -422,7 +413,7 @@ const Marca = () => {
         </div>
       </section>
 
-    
+
       <footer
         className="py-5 mt-5"
         style={{
@@ -454,9 +445,11 @@ const Marca = () => {
                 background: '#d69a49',
                 color: '#fff',
                 fontSize: '24px',
-              }}
-            >
-              <FaArrowUp />
+              }}>
+              <div style={{ marginBottom: '4px' }}>↑</div>
+
+            
+
             </button>
           </div>
         </div>
@@ -465,4 +458,4 @@ const Marca = () => {
   );
 };
 
-export default Home;
+export default Marca;
