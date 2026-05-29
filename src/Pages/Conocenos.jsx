@@ -18,7 +18,9 @@ const Conocenos = () => {
       <section
   style={{
     minHeight: "100vh",
-    backgroundColor: "#2b2b2b",
+    backgroundImage: "url('/img miguel/fondo 1.png')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
   }}
 >
 
@@ -117,7 +119,7 @@ const Conocenos = () => {
 
       {/* CARDS */}
       <section
-        className="py-5"
+        className="py-0"
         style={{
           backgroundImage: "url('/img miguel/fondo2.png')",
           backgroundSize: "cover",
@@ -757,11 +759,11 @@ const Conocenos = () => {
       
 
 {/* CONTACTO */}
-<section className="py-5">
+<section className="py-0">
   <div className="container">
 
     <h1
-      className="text-center mb-5 fw-bold"
+      className="text-center mb-5 fw-bold py-5"
       style={{
         color: "#d8c3a5",
         fontFamily: "'Caesar Dressing', system-ui",
