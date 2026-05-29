@@ -9,8 +9,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 } from 'react-icons/fa6'; */
 
 
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Tienda = () => {
 
