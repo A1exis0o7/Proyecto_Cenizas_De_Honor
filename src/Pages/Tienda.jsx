@@ -1,12 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-/* import {
+import {
   FaFacebookF,
   FaInstagram,
   FaTiktok,
   FaYoutube,
   FaXTwitter,
-} from 'react-icons/fa6'; */
+} from 'react-icons/fa6';
 
 
 
