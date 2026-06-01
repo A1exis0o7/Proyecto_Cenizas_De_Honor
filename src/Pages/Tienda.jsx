@@ -40,12 +40,12 @@ const Tienda = () => {
         <div className="row g-3">
 
           {[
-            { title: "CAMISAS", img: "./img - isa/Camisa 1.jpg" },
-            { title: "GORRAS", img: "./img - isa/Gorra.jpg" },
-            { title: "CUADERNOS", img: "./img - isa/Cuaderno.jpg" },
-            { title: "BUZOS", img: "./img - isa/Buso 1.jpg" },
-            { title: "BOLSOS", img: "./img - isa/Mochila.jpg" },
-            { title: "TERMOS", img: "./img - isa/Termo 1.jpg" },
+            { title: "CAMISAS", src: "./img - isa/Camisa 1.jpg" },
+            { title: "GORRAS", src: "./img - isa/Gorra.jpg" },
+            { title: "CUADERNOS", src: "./img - isa/Cuaderno.jpg" },
+            { title: "BUZOS", src: "./img - isa/Buso 1.jpg" },
+            { title: "BOLSOS", src: "./img - isa/Mochila.jpg" },
+            { title: "TERMOS", src: "./img - isa/Termo 1.jpg" },
           ].map((item, index) => (
             <div className="col-12 col-md-4" key={index}>
               <div 
@@ -53,7 +53,7 @@ const Tienda = () => {
                 style={{ backgroundColor: '#e9e9e9' }}
               >
                 <img 
-                  src={item.img} 
+                  src={item.src} 
                   alt={item.title} 
                   className="card-img-top"
                 />
