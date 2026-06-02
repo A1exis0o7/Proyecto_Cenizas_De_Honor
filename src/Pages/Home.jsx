@@ -105,7 +105,7 @@ const Home = () => {
           </div>
 
           <div className="col col-12">
-            <Link to="/Tienda" className="h3 mt-4 mb-4">TIENDA</Link>
+            <Link to="/Tienda" className="h3 mt-4 btn mb-4">TIENDA</Link>
           </div>
 
           <div className="col col-12">
