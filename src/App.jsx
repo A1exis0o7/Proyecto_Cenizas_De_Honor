@@ -8,17 +8,20 @@ import Conocenos from './Pages/Conocenos'
 import Home from './Pages/Home'
 import Tienda from './Pages/Tienda'
 import Marca from './Pages/Marca'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 
 const App = () => {
   return (
   <>
-    <Home/>
-
-    <Tienda/>
-    
-    <Conocenos/>
-
-    <Marca/>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/tienda" element={<Tienda/>} />
+      <Route path="/conocenos" element={<Conocenos/>} />
+      <Route path="/marca" element={<Marca/>} />
+    </Routes>
+  </BrowserRouter>
 
   </>
   )
