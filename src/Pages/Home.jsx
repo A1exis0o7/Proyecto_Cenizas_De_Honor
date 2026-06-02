@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -104,11 +105,11 @@ const Home = () => {
           </div>
 
           <div className="col col-12">
-            <h3 className="h3 mt-4 mb-4">TIENDA</h3>
+            <Link to="/Tienda" className="h3 mt-4 mb-4">TIENDA</Link>
           </div>
 
           <div className="col col-12">
-            <h4 className="h4 p-3 pb-5">
+            <h4  className="h4 p-3 pb-5">
               Nuestra tienda digital donde podras comprar nuestros productos
               pensados para ti y tu bolsillo, todo de forma segura
             </h4>
