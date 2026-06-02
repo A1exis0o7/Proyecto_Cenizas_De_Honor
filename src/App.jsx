@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
 import Tienda from './Pages/Tienda'
 import Marca from './Pages/Marca'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 
 
 
