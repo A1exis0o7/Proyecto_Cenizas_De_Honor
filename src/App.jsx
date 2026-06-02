@@ -1,15 +1,19 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+/* import React from 'react'
+import { StatusMiguel } from './Components/StatusMiguel'
+import StatusAlex from './Components/StatusAlex'
+import { StatusPersonajes_Isabel } from './Components/StatusPersonajes_Isabel'
+import {StatusGemas_Lu} from './Components/StatusGemas_Lu' */
+
+import Conocenos from './Pages/Conocenos'
 import Home from './Pages/Home'
 import Tienda from './Pages/Tienda'
 import Marca from './Pages/Marca'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
-
-
- const App = () => {
+const App = () => {
   return (
   <>
-  
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home/>} />
@@ -18,7 +22,7 @@ import Marca from './Pages/Marca'
       <Route path="/marca" element={<Marca/>} />
     </Routes>
   </BrowserRouter>
-  
+
   </>
   )
 }
