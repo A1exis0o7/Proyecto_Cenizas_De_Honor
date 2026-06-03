@@ -20,8 +20,11 @@ const Tienda = () => {
         <a className="navbar-brand fw-bold" href="#">
           <img src="" alt="LOGO" className="img-fluid" style={{ width: '100px', height: 'auto' }} />
         </a>
-       
-        <span className="text-white ">🛒</span>
+      
+     
+     <div class="col-md-5 offset-md-5 text-end" style={{padding:'0 0 0 60px'}}>🛒</div>
+     
+    
       </nav>
 
       
@@ -36,17 +39,17 @@ const Tienda = () => {
         <div className="row g-3">
 
           {[
-            { title: "CAMISAS", src: "./img - isa/Camisa 1.jpg" },
-            { title: "GORRAS", src: "./img - isa/Gorra.jpg" },
-            { title: "CUADERNOS", src: "./img - isa/Cuaderno.jpg" },
-            { title: "BUZOS", src: "./img - isa/Buso 1.jpg" },
-            { title: "BOLSOS", src: "./img - isa/Mochila.jpg" },
-            { title: "TERMOS", src: "./img - isa/Termo 1.jpg" },
+            { title: "CAMISAS", src: "./img - Isa/Camisa 1.png"},
+            { title: "GORRAS", src: "./img - Isa/Gorra.png" },
+            { title: "CUADERNOS", src: "./img - Isa/Cuaderno.png" },
+            { title: "BUZOS", src: "./img - Isa/Buso 1.png" },
+            { title: "BOLSOS", src: "./img - Isa/Mochila.png" },
+            { title: "TERMOS", src: "./img - Isa/Termo 1.png" },
           ].map((item, index) => (
             <div className="col-12 col-md-4" key={index}>
               <div 
                 className="card text-center border-0"
-                style={{ backgroundColor: '#e9e9e9' }}
+                style={{ backgroundColor: '#bfbfbf'}}
               >
                 <img 
                   src={item.src} 
