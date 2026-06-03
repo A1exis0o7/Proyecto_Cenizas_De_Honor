@@ -13,25 +13,21 @@ import {
 const Tienda = () => {
 
   return (
-    <div style={{ backgroundColor: '#000', minHeight: '100vh', color: '#fff' }}>
+    <div style={{ backgroundColor: '#111', minHeight: '100vh', color: '#fff' }}>
       
-  
       <nav className="navbar navbar-expand-lg navbar-dark bg-black px-4">
-        <a className="navbar-brand fw-bold" href="#">🐵</a>
-        <div className="mx-auto">
-          <ul className="navbar-nav d-flex flex-row gap-4">
-            <li className="nav-item"><a className="nav-link" href="#">Inicio</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Tienda</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">Contacto</a></li>
-          </ul>
-        </div>
-        <span className="text-white">🛒</span>
+        
+        <a className="navbar-brand fw-bold" href="#">
+          <img src="" alt="LOGO" className="img-fluid" style={{ width: '100px', height: 'auto' }} />
+        </a>
+       
+        <span className="text-white ">🛒</span>
       </nav>
 
       
-      <div className="text-center my-5">
-        <h1 className="fw-bold" style={{ letterSpacing: '3px' }}>
-          TIENDA <span style={{ color: '#f5a623' }}>CODEX</span>
+      <div className="text-center my-5 ">
+        <h1 className="fw-bold " style={{ letterSpacing: '7px', fontFamily: "'Caesar Dressing', system-ui", fontSize: '4rem' }}>
+          TIENDA <span style={{ color: '#f5a623', fontFamily: "'Caesar Dressing', system-ui", }}>CODEX</span>
         </h1>
       </div>
 
