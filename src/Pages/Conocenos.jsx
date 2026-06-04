@@ -18,7 +18,7 @@ const Conocenos = () => {
       <section
   style={{
     minHeight: "100vh",
-    backgroundImage: "url('/img miguel/fondo 1.png')",
+    backgroundImage: "url('/public/img miguel/fondo 1.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
   }}

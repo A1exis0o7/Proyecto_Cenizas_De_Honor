@@ -9,6 +9,7 @@ import Home from './Pages/Home'
 import Tienda from './Pages/Tienda'
 import Marca from './Pages/Marca'
 import LottieIsabel from './Components/LottieIsabel'
+import LottieMiguel from './Components/LottieMiguel'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
@@ -21,8 +22,8 @@ const App = () => {
       <Route path="/tienda" element={<Tienda/>} />
       <Route path="/conocenos" element={<Conocenos/>} />
       <Route path="/marca" element={<Marca/>} />
-      
-      <Route path="/LottieIsabel" element={<LottieIsabel/>}/>
+      <Route path="/LottieMiguel" element={<LottieMiguel/>} />
+      <Route path="/LottieIsabel" element={<LottieIsabel/>} />
     </Routes>
   </BrowserRouter>
 
