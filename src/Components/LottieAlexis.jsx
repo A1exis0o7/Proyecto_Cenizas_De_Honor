@@ -1,9 +1,15 @@
-import lottie from "lottie-react";
-import ballAnimation from "../assets/data.json";
+import lottieReact from "lottie-react";
+import animacionAlexis from "../assets/data.json";
 
-const Example = () => {
+const Lottie = lottieReact.default;
 
- return <Lottie animationData={ballAnimation} />;
-
+const LottieAlexis = () => {
+  return (
+    <Lottie
+      animationData={animacionAlexis}
+      loop={true}
+    />
+  );
 };
-export default Example;
+
+export default LottieAlexis;

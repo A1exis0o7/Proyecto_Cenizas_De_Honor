@@ -1,9 +1,15 @@
-import Lottie from "lottie-react";
-import circulitoAnimation from "../assets/animacionIsabel.json";
+import lottieReact from "lottie-react";
+import animacionIsabel from "../assets/animacionisabel.json";
 
-const Example = () => {
-  return <Lottie animationData={circulitoAnimation} />;
+const Lottie = lottieReact.default;
+
+const LottieIsabel = () => {
+  return (
+    <Lottie
+      animationData={animacionIsabel}
+      loop={true}
+    />
+  );
 };
 
-
-export default Example;
+export default LottieIsabel;

@@ -1,8 +1,15 @@
-import Lottie from "lottie-react";
-import groovyWalkAnimation from "../assets/animacionmiguel.json";
+import lottieReact from "lottie-react";
+import animacionMiguel from "../assets/animacionmiguel.json";
 
-const Example = () => {
-  return <Lottie animationData={groovyWalkAnimation} />;
+const Lottie = lottieReact.default;
+
+const LottieMiguel = () => {
+  return (
+    <Lottie
+      animationData={animacionMiguel}
+      loop={true}
+    />
+  );
 };
 
-export default Example;
+export default LottieMiguel;
