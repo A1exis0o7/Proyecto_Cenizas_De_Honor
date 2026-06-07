@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import circulitoAnimation from "./animacionIsabel.json";
+import circulitoAnimation from "../assets/animacionIsabel.json";
 
 const Example = () => {
   return <Lottie animationData={circulitoAnimation} />;

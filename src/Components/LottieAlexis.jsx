@@ -1,5 +1,5 @@
-import lootie from "loottie-react";
-import ballAnimation from "./data.json";
+import lottie from "lottie-react";
+import ballAnimation from "../assets/data.json";
 
 const Example = () => {
 

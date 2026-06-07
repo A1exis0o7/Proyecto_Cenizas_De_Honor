@@ -165,7 +165,7 @@ const Conocenos = () => {
         }}
       >
         <img
-          src="/img miguel/yo.png"
+          src="public/img miguel/miguel.jpg"
           alt="Miguel"
           className="img-fluid w-100 h-100"
           style={{
@@ -320,7 +320,7 @@ const Conocenos = () => {
         }}
       >
         <img
-          src="/img miguel/alexis.png"
+          src="public/img miguel/alexis.jpg"
           alt="Alexis"
           className="img-fluid w-100 h-100"
           style={{
@@ -475,7 +475,7 @@ const Conocenos = () => {
         }}
       >
         <img
-          src="/img miguel/luna.png"
+          src="public/img miguel/luna.jpg"
           alt="Luna"
           className="img-fluid w-100 h-100"
           style={{
@@ -630,7 +630,7 @@ const Conocenos = () => {
         }}
       >
         <img
-          src="/img miguel/sa.png"
+          src="public/img miguel/isabel.jpg"
           alt="Isabel"
           className="img-fluid w-100 h-100"
           style={{
