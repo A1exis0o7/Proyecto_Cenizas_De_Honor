@@ -4,31 +4,28 @@ import { useRef } from "react";
 
 const Lottie = lottieReact.default;
 
-export const LottieMiguel = () => {
+const LottieMiguel = () => {
+  const lottieRef = useRef(null);
 
-    const lottieRef = useRef()
-    const reproducir = () => {
-        lottieRef.current.play()
-    }
+  const reproducir = () => {
+    lottieRef.current?.goToAndPlay(0, true);
+  };
 
-    return (
-        <>
-
-            <div onClick={reproducir}>
-                <Lottie
-                lottieRef={lottieRef}
-                    animationData={animacionMiguel}
-                    loop={false}
-                    autoplay={false}
-                    style={{
-                        width: 500,
-                        heigth: 500,
-                    }}
-                />
-            </div>
-        </>
-
-    );
+  return (
+    <div onClick={reproducir}>
+      <Lottie
+        lottieRef={lottieRef}
+        animationData={animacionMiguel}
+        loop={false}
+        autoplay={false}
+        style={{
+          width: 500,
+          height: 500,
+          cursor: "pointer",
+        }}
+      />
+    </div>
+  );
 };
 
 export default LottieMiguel;
