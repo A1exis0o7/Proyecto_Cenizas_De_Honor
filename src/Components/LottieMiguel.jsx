@@ -1,5 +1,5 @@
 import lottieReact from "lottie-react";
-import animacionMiguel from "../assets/animacionmiguel.json";
+import animacionMiguel from "../assets/OsoMiguel.json";
 import { useRef } from "react";
 
 const Lottie = lottieReact.default;
