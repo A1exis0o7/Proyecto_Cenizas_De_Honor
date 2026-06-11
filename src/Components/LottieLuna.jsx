@@ -1,5 +1,5 @@
 import lottieReact from "lottie-react";
-import animacionLuna from "../assets/animacionLuna.json";
+import animacionLuna from "../assets/OsitoLu.json";
 import { useRef } from "react";
 
 
