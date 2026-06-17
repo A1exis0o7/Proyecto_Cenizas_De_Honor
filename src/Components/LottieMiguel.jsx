@@ -12,7 +12,7 @@ const LottieMiguel = () => {
   };
 
   return (
-    <div onClick={reproducir}>
+   /*  <div onClick={reproducir}>
       <Lottie
         lottieRef={lottieRef}
         animationData={animacionMiguel}
@@ -24,6 +24,12 @@ const LottieMiguel = () => {
           cursor: "pointer",
         }}
       />
+    </div> */
+    <div className = "pantalla">
+      <img src="public/bbs/Fondo.png" alt="" />
+      <img src="public/bbs/Nube 1.png" alt="" />
+      <img src="public/bbs/Nube 2.png" alt="" />
+
     </div>
   );
 };
