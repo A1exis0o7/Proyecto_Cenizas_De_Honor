@@ -1,0 +1,22 @@
+.pantalla {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    background: yellow;
+}
+
+.cubo-hielo {
+    width: 100px;
+}
+
+.pez-espinas {
+    width: 100px;
+}
+
+.osito-luna {
+    width: 350px;
+    position: absolute;
+    right: 198px;
+    bottom: 52px;
+}
