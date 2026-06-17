@@ -13,10 +13,15 @@ const LottieIsabel = () => {
   }
 
   return (
+  
+    <div className="Pantalla">
+      <img src="public/bbs/Fondo.png" alt="" />
+      <img src="public/bbs/Nube 1.png" alt="" />
+      <img src="public/bbs/Nube 2.png" alt="" />
+      <img src="public/bbs/Cubo hielo.png" alt="" />
+      <img src="public/bbs/Pez espinas.png" alt="" />
 
-    <>
       <div onClick={Reproducir}>
-
         <Lottie
           LottieRef={LottieRef}
           animationData={animacionIsabel}
@@ -24,10 +29,10 @@ const LottieIsabel = () => {
           autoPlay={false}
           style={{ width: 500, height: 500 }}
         />
-        
-      </div>
+       </div>
 
-    </>
+    
+    </div>
 
   );
 };
