@@ -10,16 +10,23 @@ const Lottie = lottieReact.default;
 export const LottieLuna = () => {
     const PinguRef = useRef()
     const lottieRef = useRef()
+    
     const reproducir = () => {
         lottieRef.current.stop()
         lottieRef.current.play()
     }
-
-        const reproducirPingu = () => {
+    const reproducirPingu = () => {
         PinguRef.current.stop()
         PinguRef.current.play()
     }
 
+    const LanzarHielo = () => {
+        PinguRef.current.playSegments([0,20], true)
+    }
+
+     const LanzarPez = () => {
+        PinguRef.current.playSegments([20,50], true)
+    }
     return (
         <>
 
@@ -27,8 +34,8 @@ export const LottieLuna = () => {
                 <img className="position-absolute fondo" src="./public/bbs/Fondo.png" alt="" />
                 <img className="position-absolute nube1" src="./public/bbs/Nube 1.png" alt="" />
                 <img className="position-absolute nube2" src="./public/bbs/Nube 2.png" alt="" />
-                <img className="position-absolute cubo-hielo" src="./public/bbs/Cubo hielo.png" alt="" />
-                <img className="position-absolute pez-espinas" src="./public/bbs/Pez espinas.png" alt="" />
+                <img onClick={LanzarHielo} className="position-absolute cubo-hielo" src="./public/bbs/Cubo hielo.png" alt="" />
+                <img onClick={LanzarPez} className="position-absolute pez-espinas" src="./public/bbs/Pez espinas.png" alt="" />
                 <img className="position-absolute iglu" src="./public/bbs/Iglu.png" alt="" />
 
 
@@ -39,8 +46,8 @@ export const LottieLuna = () => {
                         loop={false}
                         autoplay={false}
                         style={{
-                            width: 400,
-                            height: 400,
+                            width: 300,
+                            height: 300,
                         }}
                     />
                 </div>
@@ -53,8 +60,8 @@ export const LottieLuna = () => {
                         loop={false}
                         autoplay={false}
                         style={{
-                            width: 200,
-                            height: 200,
+                            width: 100,
+                            height: 100,
                         }}
                     />
                 </div>

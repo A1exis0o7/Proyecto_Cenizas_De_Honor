@@ -7,23 +7,25 @@
 }
 
 .cubo-hielo {
-    width: 100px;
-    left: 70px;
+    width: 83px;
+    left: 800px;
     bottom: 20px;
     cursor: pointer
-}
-
-.pez-espinas {
-    width: 90px;
-    left: 290px;
-    bottom: 30px;
-    cursor: pointer;
-    transition-duration: 1s;
 }
 
 .cubo-hielo:hover {
     transform: rotate(-5deg) scale(1.1);
 }
+
+.pez-espinas {
+    width: 72px;
+    left: 449px;
+    bottom: 30px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+
 
 .pez-espinas:hover {
     transform: rotate(5deg) scale(1.1);
@@ -49,9 +51,9 @@
 .pingu {
     width: 30px;
     position: absolute;
-    left: 50px;
-    bottom: 30px;
-    cursor: pointer ;
+    left: 253px;
+    bottom: 66px;
+    cursor: pointer;
     transition-duration: .1s;
 }
 
@@ -63,7 +65,7 @@
 .osito-luna {
     /* width: 346px; */
     position: absolute;
-    right: 112px;
+    right: 208px;
     bottom: 57px;
 }
 
@@ -71,6 +73,7 @@
     transform: rotate(-1deg) scale(1.05);
     filter: drop-shadow(2px 2px 2px #525252);
 }
+
 @keyframes nube1 {
 
     /*  Keyframe1 */
@@ -106,4 +109,3 @@
         transform: translateX(0);
     }
 }
-
