@@ -19,6 +19,12 @@ const LottieMiguel = () => {
   const reproducirPingui = () => {
     pinguiRef.current?.goToAndPlay(0, true);
   };
+  const lanzarHielo = () => {
+    pinguiRef.current.playSegments([0,36], true)
+  }
+  const lanzarPez = () => {
+    pinguiRef.current.playSegments([36,90], true)
+  }
 
   return (
     <div className="pantalla">
@@ -46,12 +52,14 @@ const LottieMiguel = () => {
         className="position-absolute cubo-hielo"
         src="/bbs/Cubo hielo.png"
         alt="Cubo de hielo"
+        onClick={lanzarHielo}
       />
 
       <img
         className="position-absolute pez-espinas"
         src="/bbs/Pez espinas.png"
         alt="Pez"
+        onClick={lanzarPez}
       />
 
       {/* Oso */}
