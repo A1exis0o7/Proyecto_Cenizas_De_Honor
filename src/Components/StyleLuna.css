@@ -60,6 +60,17 @@
     filter: drop-shadow(2px 2px 2px #525252);
 }
 
+.osito-luna {
+    /* width: 346px; */
+    position: absolute;
+    right: 112px;
+    bottom: 57px;
+}
+
+.osito-luna:hover {
+    transform: rotate(-1deg) scale(1.05);
+    filter: drop-shadow(2px 2px 2px #525252);
+}
 @keyframes nube1 {
 
     /*  Keyframe1 */
@@ -96,9 +107,3 @@
     }
 }
 
-.osito-luna {
-    /* width: 346px; */
-    position: absolute;
-    right: 112px;
-    bottom: 57px;
-}
