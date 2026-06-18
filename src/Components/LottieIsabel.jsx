@@ -1,33 +1,42 @@
 import lottieReact from "lottie-react";
-import animacionIsabel from "../assets/animacionisabel.json";
+import animacionIsabel from "../assets/animacionOsito-Isabel.json";
 import { useRef } from "react";
+import animacionPingui from "../assets/pinguinoAndres.json";
+import "./StyleIsabel.css"
 
 const Lottie = lottieReact.default;
 
 const LottieIsabel = () => {
-
-  const LottieRef = useRef();
+  const LottieRef = useRef(null);
 
   const Reproducir = () => {
-    LottieRef.current.play()
+    LottieRef.current?.goToAndPlay(0, true);
   }
 
   return (
 
-    <>
-      <div onClick={Reproducir}>
+    <div className="Pantalla">
+      <img className="position-absolute fondo" src="public/bbs/Fondo.png" alt="" />
+      <img className="position-absolute nube1" src="public/bbs/Nube 1.png" alt=""/>
+      <img className="position-absolute nube2" src="public/bbs/Nube 2.png" alt=""/>
+      <img className="position-absolute cuboHielo" src="public/bbs/Cubo hielo.png" alt=""/>
+      <img className="position-absolute pezEspinas" src="public/bbs/Pez espinas.png" alt=""/>
 
+       <div className= "position-absolute osito" onClick = { reproducir} >
         <Lottie
           LottieRef={LottieRef}
-          animationData={animacionIsabel}
-          loop={true}
+          animationData={animacionOsito-Isabel}
+          loop={false}
           autoPlay={false}
-          style={{ width: 500, height: 500 }}
+          style={{ width: 366, 
+                   height: 500,
+                   cursor: "pointer",}}
+
         />
-        
       </div>
 
-    </>
+
+    </div>
 
   );
 };
