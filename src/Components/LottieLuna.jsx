@@ -8,16 +8,17 @@ import { useRef } from "react";
 const Lottie = lottieReact.default;
 
 export const LottieLuna = () => {
-
+    const PinguRef = useRef()
     const lottieRef = useRef()
     const reproducir = () => {
         lottieRef.current.stop()
         lottieRef.current.play()
-
-    
-    
     }
 
+        const reproducirPingu = () => {
+        PinguRef.current.stop()
+        PinguRef.current.play()
+    }
 
     return (
         <>
@@ -44,10 +45,10 @@ export const LottieLuna = () => {
                     />
                 </div>
 
-                <div className="position-absolute pingu"  onClick={reproducir}>
+                <div className="position-absolute pingu" onClick={reproducirPingu}>
 
                     <Lottie
-                        lottieRef={lottieRef}
+                        lottieRef={PinguRef}
                         animationData={animacionAndres}
                         loop={false}
                         autoplay={false}
