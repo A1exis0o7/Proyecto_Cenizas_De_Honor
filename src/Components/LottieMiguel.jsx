@@ -77,7 +77,7 @@ const LottieMiguel = () => {
         className="position-absolute pingui"
         onClick={reproducirPingui}
       >
-        <Lottie
+        <Lottie className="pingui-sombra"
           lottieRef={pinguiRef}
           animationData={animacionPingui}
           loop={false}

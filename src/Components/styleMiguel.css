@@ -31,12 +31,20 @@
 
 }
 
+.oso:hover{
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
 .pingui{
     height: 200px;
     width: 200px;
     top: 166px;
     left: 117px;
     cursor: pointer;
+}
+
+.pingui-sombra:hover{
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 .nube1{
