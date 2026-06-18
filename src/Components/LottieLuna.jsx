@@ -8,13 +8,17 @@ import { useRef } from "react";
 const Lottie = lottieReact.default;
 
 export const LottieLuna = () => {
+    const PinguRef = useRef()
+    const lottieRef = useRef()
+    const reproducir = () => {
+        lottieRef.current.stop()
+        lottieRef.current.play()
+    }
 
-       const lottieRef = useRef()
-        const reproducir = () => {
-            lottieRef.current.stop()
-            lottieRef.current.play()
-        }
-    
+        const reproducirPingu = () => {
+        PinguRef.current.stop()
+        PinguRef.current.play()
+    }
 
     return (
         <>
@@ -28,19 +32,33 @@ export const LottieLuna = () => {
                 <img className="position-absolute iglu" src="./public/bbs/Iglu.png" alt="" />
 
 
-   <div className="position-absolute osito-luna" onClick={reproducir}>
+                <div className="position-absolute osito-luna" onClick={reproducir}>
                     <Lottie
-                    lottieRef={lottieRef}
+                        lottieRef={lottieRef}
                         animationData={animacionLuna}
                         loop={false}
                         autoplay={false}
                         style={{
-                            width: 500,
-                            height: 500,
+                            width: 400,
+                            height: 400,
                         }}
                     />
                 </div>
+
+                <div className="position-absolute pingu" onClick={reproducirPingu}>
+
+                    <Lottie
+                        lottieRef={PinguRef}
+                        animationData={animacionAndres}
+                        loop={false}
+                        autoplay={false}
+                        style={{
+                            width: 200,
+                            height: 200,
+                        }}
+                    />
                 </div>
+            </div>
 
 
         </>)

@@ -11,6 +11,15 @@
 .cubo-hielo{
     width: 80px;
     height: 80px;
+    top: 200px;
+    left: 300px;
+    cursor: pointer;
+}
+
+.cubo-hielo:hover{
+    scale: 1.1;
+    rotate: 5deg;
+    transition: all 0.3s ease;
 }
 
 .oso{
@@ -18,15 +27,58 @@
     width: 319px;
     right: 198px;
     bottom: 52px;
+    cursor: pointer;
 
+}
+
+.oso:hover{
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.pingui{
+    height: 200px;
+    width: 200px;
+    top: 166px;
+    left: 117px;
+    cursor: pointer;
+}
+
+.pingui-sombra:hover{
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 .nube1{
     top: 31px;
     left: 36px;
+    animation: movernube 20s linear infinite;
 }
 
 .nube2{
     top: 31px;
     right: 36px;
+    animation: movernube1 18s linear infinite;
+}
+
+.pez-espinas{
+    top: 270px;
+    left: 400px;
+    cursor: pointer;
+}
+
+.pez-espinas:hover{
+    scale: 1.1;
+    rotate: -5deg;
+    transition: all 0.3s ease;
+}
+
+/* animacion de la nube*/
+@keyframes movernube {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(400px); }
+    100% { transform: translateX(0); }
+}
+@keyframes movernube1 {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-400px); }
+    100% { transform: translateX(0); }
 }

@@ -8,15 +8,102 @@
 
 .cubo-hielo {
     width: 100px;
+    left: 70px;
+    bottom: 20px;
+    cursor: pointer
 }
 
 .pez-espinas {
-    width: 100px;
+    width: 90px;
+    left: 290px;
+    bottom: 30px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+.cubo-hielo:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.pez-espinas:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.nube1 {
+    top: 31px;
+    left: 36px;
+    animation: nube1 50s linear infinite;
+}
+
+.nube2 {
+    top: 31px;
+    right: 64px;
+    animation: nube2 50s linear infinite;
+}
+
+.iglu {
+    top: 159px;
+    left: 81px;
+}
+
+.pingu {
+    width: 30px;
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    cursor: pointer ;
+    transition-duration: .1s;
+}
+
+.pingu:hover {
+    transform: rotate(-1deg) scale(1.05);
+    filter: drop-shadow(2px 2px 2px #525252);
 }
 
 .osito-luna {
-    width: 350px;
+    /* width: 346px; */
     position: absolute;
-    right: 198px;
-    bottom: 52px;
+    right: 112px;
+    bottom: 57px;
 }
+
+.osito-luna:hover {
+    transform: rotate(-1deg) scale(1.05);
+    filter: drop-shadow(2px 2px 2px #525252);
+}
+@keyframes nube1 {
+
+    /*  Keyframe1 */
+    0% {
+        transform: translateX(0);
+    }
+
+    /*  Keyframe2 */
+    50% {
+        transform: translateX(400px);
+    }
+
+    /*  Keyframe3 */
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes nube2 {
+
+    /*  Keyframe1 */
+    0% {
+        transform: translateX(0);
+    }
+
+    /*  Keyframe2 */
+    50% {
+        transform: translateX(-400px);
+    }
+
+    /*  Keyframe3 */
+    100% {
+        transform: translateX(0);
+    }
+}
+
