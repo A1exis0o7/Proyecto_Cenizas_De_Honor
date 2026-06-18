@@ -8,16 +8,28 @@
     
 }
 
-.cubo-hielo{
+.cuboHielo{
     width: 80px;
-    height: 80px;
+    left: 70px;
+    bottom: 20px;
+    cursor: pointer;
+
 }
 
-.oso{
+.pezEspinas{
+    width: 90px;
+    left: 290px;
+    bottom: 30px;
+    cursor: pointer;
+
+}
+
+.osito{
     height: 437px;
     width: 319px;
     right: 198px;
     bottom: 52px;
+
 
 }
 

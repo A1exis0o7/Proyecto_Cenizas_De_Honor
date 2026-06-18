@@ -16,11 +16,11 @@ const LottieIsabel = () => {
   return (
 
     <div className="Pantalla">
-      <img className="position-absolute Fondo" src="public/bbs/Fondo.png" alt="" />
-      <img className="position-absolute Nube 1" src="public/bbs/Nube 1.png" alt=""/>
-      <img className="position-absolute Nube 2" src="public/bbs/Nube 2.png" alt=""/>
-      <img className="position-absolute Cubo hielo" src="public/bbs/Cubo hielo.png" alt=""/>
-      <img className="position-absolute Pez espinas" src="public/bbs/Pez espinas.png" alt=""/>
+      <img className="position-absolute fondo" src="public/bbs/Fondo.png" alt="" />
+      <img className="position-absolute nube1" src="public/bbs/Nube 1.png" alt=""/>
+      <img className="position-absolute nube2" src="public/bbs/Nube 2.png" alt=""/>
+      <img className="position-absolute cuboHielo" src="public/bbs/Cubo hielo.png" alt=""/>
+      <img className="position-absolute pezEspinas" src="public/bbs/Pez espinas.png" alt=""/>
 
        <div className= "position-absolute osito" onClick = { reproducir} >
         <Lottie
