@@ -32,7 +32,20 @@ const LottieMiguel = () => {
           cursor: "pointer",
         }}
       />
-    </div> 
+    </div>
+    <div className="position-absolute pingui" onClick={reproducir}>
+      <Lottie 
+        lottieRef={lottieRef}
+        animationData={animacionPingui}
+        loop={false}
+        autoplay={false}
+        style={{
+          width: 200,
+          height: 200,
+          cursor: "pointer",
+        }}
+      />
+    </div>  
     
 
     </div>
