@@ -1,4 +1,5 @@
 import React from 'react'
+import "../Components/StyleComic.css"
 
 const Comic = () => {
   return (
@@ -6,7 +7,9 @@ const Comic = () => {
     <>
     
 
-   <h1>hola</h1>
+   <div className='Escenario-Completo'>
+
+   </div>
 
     
     </>
