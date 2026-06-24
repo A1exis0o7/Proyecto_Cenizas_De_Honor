@@ -22,7 +22,7 @@ const LottieIsabel = () => {
       <img className="position-absolute nube2" src="public/bbs/Nube 2.png" alt=""/>
       <img className="position-absolute cuboHielo" src="public/bbs/Cubo hielo.png" alt=""/>
       <img className="position-absolute pezEspinas" src="public/bbs/Pez espinas.png" alt=""/>
-      <img className="position-absolute iglu" src="public/bbs/Iglu.png" alt=""/>
+      <img className="position-absolute igu" src="public/bbs/Iglu.png" alt=""/>
       
 
        <div className= "position-absolute osito" onClick = { reproducir} >
@@ -38,7 +38,7 @@ const LottieIsabel = () => {
         />
       </div>
 
-      <div className = "position-absolute pingui" onClick = { reproducir} >
+      <div className = "position-absolute pinguino" onClick = { reproducir} >
         <Lottie
           LottieRef={LottieRef}
           animationData={animacionPingui}

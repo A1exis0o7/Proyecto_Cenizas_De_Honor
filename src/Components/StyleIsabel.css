@@ -42,7 +42,7 @@
 }
 
 
-.pingui{
+.pinguino{
     left: 200px;
     top: 90px;
     bottom: 52px;
@@ -57,19 +57,16 @@
     top: 31px;
     left: 36px;
 }
-.nube1:hover{
-    transform: tras(-1deg) scale(1.05);
-   
-}
 
+   
 .nube2{
     top: 31px;
     right: 36px;
 }
 
-.iglu{
+.igu{
     width: 300px;
-    left: 960px;
+    left: 990px;
     top: 90px;
     bottom: 20px;
     cursor: pointer;
