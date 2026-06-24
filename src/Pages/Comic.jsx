@@ -8,7 +8,7 @@ const Comic = () => {
     
 
    <div className='Escenario-Completo'>
-
+    
    </div>
 
     
