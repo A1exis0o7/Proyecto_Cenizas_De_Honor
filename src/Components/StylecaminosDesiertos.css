@@ -1,0 +1,10 @@
+.lottie-leon{
+    animation: moverse 11s linear ;
+}
+
+@keyframes moverse {
+    0% { transform: translateX(0); }
+    46.36%{ transform: translateX(-24vw); }
+    54.64% { transform: translateX(-24vw); }
+    100% { transform: translateY(-9vw) translateX(-20vw); }
+}

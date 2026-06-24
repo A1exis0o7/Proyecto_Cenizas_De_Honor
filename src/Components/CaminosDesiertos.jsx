@@ -1,16 +1,19 @@
 import lottieReact from "lottie-react";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../Components/StyleComic.css";
 import animacionLeon from "../assets/lotties miguel/sir leon-caminos-desiertos.json";
+import "../Components/StylecaminosDesiertos.css";
 
 const Lottie = lottieReact.default;
 
 const CaminosDesiertos = () => {
 
   const leonRef = useRef(null);
+  const [animando, setAnimando] = useState(false);
 
   const reproducir = () => {
     leonRef.current?.goToAndPlay(0, true);
+    setAnimando(true);
   };
 
   return (
@@ -21,6 +24,7 @@ const CaminosDesiertos = () => {
         onClick={reproducir}
       >
         <Lottie
+          className={animando ? "lottie-leon" : ""}
           lottieRef={leonRef}
           animationData={animacionLeon}
           loop={false}
