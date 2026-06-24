@@ -1,6 +1,7 @@
 import React from 'react'
 import "../Components/StyleComic.css"
-import "../Components/styleMiguel.css";
+
+
 
 const CaminosDesiertos = () => {
   return (
