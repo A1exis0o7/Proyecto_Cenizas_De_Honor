@@ -22,8 +22,8 @@ const Home = () => {
             Cenizas de Honor es un cómic medieval. Sigue a Sir Leon desde la caída de Roma hasta el último amanecer
           </h5>
 
-          <button className="btn btn-dark rounded-pill">
-            Explorar Comic
+          <button  className="btn btn-dark rounded-pill">
+          <Link to="/Comic">  Explorar Comic </Link>
           </button>
         </div>
 
