@@ -29,6 +29,7 @@ const CaminosDesiertos = () => {
           animationData={animacionLeon}
           loop={false}
           autoplay={false}
+          onComplete={() => setAnimando(false)}
           style={{
             width: 366,
             height: 500,
