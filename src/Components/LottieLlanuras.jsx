@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+/* import React, { useRef } from "react";
 import animacionLeon from "../assets/AnimaciónLuna/Llanuraleón.json";
 import Lottie from "lottie-react";
 
@@ -16,4 +16,4 @@ export const LottieLlanuras = () => {
             />
         </div>);
     
-};
+}; */
