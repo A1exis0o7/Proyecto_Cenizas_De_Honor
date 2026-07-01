@@ -1,0 +1,9 @@
+.fondo-pasillo-cuadros {
+background-image: url('../assets/Imagenes-Isabel/FondoPasillo.jpg');
+width: 3000px;
+height: 9000px;
+background-repeat: no-repeat;
+background-size: contain;
+
+
+}
