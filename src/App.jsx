@@ -9,6 +9,8 @@ import LottieMiguel from './Components/LottieMiguel'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import CaminosDesiertos from './Components/CaminosDesiertos'
 import Llanuras from './Components/Llanuras'
+import { PasilloCuadros } from './Components/PasilloCuadros'
+
 
 
 
@@ -25,6 +27,7 @@ const App = () => {
           <Route path="/LottieMiguel" element={<LottieMiguel />} />
           <Route path="/caminos-desiertos" element={<CaminosDesiertos />} />
           <Route path="/llanuras" element={<Llanuras />} />
+           <Route path="/PasilloCuadros" element={<PasilloCuadros />} />
         </Routes>
       </BrowserRouter>
 
