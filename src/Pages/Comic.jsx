@@ -32,7 +32,7 @@ const Comic = () => {
 
     animationData={AnimacionEscena1}
     autoplay={true}
-    loop={false}
+    loop={true}
     className="Fondo-escena1"
     style={{
         width: "100%",
@@ -45,10 +45,10 @@ const Comic = () => {
         <Lottie
           animationData={BotonAnimado}
           autoplay={true}
-          loop={false}
+          loop={true}
        
           style={{
-            width: 120,
+            
             cursor: "pointer",
           }}
         />
