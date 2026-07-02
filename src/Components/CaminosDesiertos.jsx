@@ -9,11 +9,20 @@ const Lottie = lottieReact.default;
 const CaminosDesiertos = () => {
 
   const leonRef = useRef(null);
+
   const [animando, setAnimando] = useState(false);
+  const [keyLottie, setKeyLottie] = useState(0);
 
   const reproducir = () => {
-    leonRef.current?.goToAndPlay(0, true);
+    if (animando) return; // Evita varios click
+
     setAnimando(true);
+    leonRef.current?.goToAndPlay(0, true);
+  };
+
+  const finalizarAnimacion = () => {
+    setAnimando(false);
+    setKeyLottie(prev => prev + 1);
   };
 
   return (
@@ -24,12 +33,16 @@ const CaminosDesiertos = () => {
         onClick={reproducir}
       >
         <Lottie
-          className={animando ? "lottie-leon" : ""}
+          key={keyLottie}
+          className={`
+            ${!animando ? "aura" : ""}
+            ${animando ? "lottie-leon" : ""}
+          `}
           lottieRef={leonRef}
           animationData={animacionLeon}
           loop={false}
           autoplay={false}
-          onComplete={() => setAnimando(false)}
+          onComplete={finalizarAnimacion}
           style={{
             width: 366,
             height: 500,
