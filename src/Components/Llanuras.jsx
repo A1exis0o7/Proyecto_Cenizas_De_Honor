@@ -24,7 +24,7 @@ export const Llanuras = () => {
                     animationData={animacionLeon}
                     loop={true}
                     autoplay={true}
-                    style={{ width: 600, height: 600, position: 'absolute', zIndex: 10 }}
+                   className= "leon-lottie"
                 />
            
                 <img className="fondo-capa nubes" src={imgNubes} alt="Nubes" />

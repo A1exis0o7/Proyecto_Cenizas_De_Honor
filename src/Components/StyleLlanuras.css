@@ -17,13 +17,14 @@
      z-index: 1;
      height: 100%; 
      object-fit: cover; 
-     
+     top: -17px;
 } 
      
 .llanura { 
      z-index: 2;
      bottom: 0;
      height: auto; 
+     top: 90px;
 } 
 
 .nubes {
@@ -42,6 +43,13 @@
      animation: moverSol 10s ease-in-out infinite;
 } 
       
+.leon-lottie{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 5;
+}
 @keyframes moverSol {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
