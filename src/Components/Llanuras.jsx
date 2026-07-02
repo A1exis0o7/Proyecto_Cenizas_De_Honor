@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import lottieReact from "lottie-react";
 import animacionLeon from "../assets/AnimaciónLuna/Llanuraleón.json";
 
-
+import "./StyleLlanuras.css"
 import imgCielo from "../assets/Llanuras-Luna/Cielo.png";
 import imgSol from "../assets/Llanuras-Luna/Sol.png";
 import imgLlanura from "../assets/Llanuras-Luna/Llanura.png";
@@ -14,7 +14,11 @@ export const Llanuras = () => {
     const leonRef = useRef(null);
 
     return (
-        <div className="pantalla-llanuras">
+        <div className="pantalla-llanuras"> 
+                <img className="fondo-capa cielo" src={imgCielo} alt="Cielo" />
+                <img className="fondo-capa sol" src={imgSol} alt="Sol" />
+                <img className="fondo-capa llanura" src={imgLlanura} alt="Llanura" />
+                
                 <Lottie
                     lottieRef={leonRef}
                     animationData={animacionLeon}
@@ -22,13 +26,10 @@ export const Llanuras = () => {
                     autoplay={true}
                     style={{ width: 600, height: 600, position: 'absolute', zIndex: 10 }}
                 />
-            <div className="pantalla-llanuras">
-                <img className="fondo-capa cielo" src={imgCielo} alt="Cielo" />
-                <img className="fondo-capa sol" src={imgSol} alt="Sol" />
-                <img className="fondo-capa llanura" src={imgLlanura} alt="Llanura" />
+           
                 <img className="fondo-capa nubes" src={imgNubes} alt="Nubes" />
             </div>
-        </div>
+    
     );
 };
 
