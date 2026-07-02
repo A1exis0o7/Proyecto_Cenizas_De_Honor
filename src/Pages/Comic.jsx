@@ -8,9 +8,8 @@ import "../Components/StyleComic.css";
 import AnimacionEscena1 from "../assets/escena1.json";
 import BotonAnimado from "../assets/boton.json";
 
-import * as LottieReact from "lottie-react";
 
-console.log(LottieReact);
+
 
 
 
@@ -20,37 +19,19 @@ console.log(LottieReact);
 
 const Comic = () => {
 
-  const escenaRef = useRef(null);
-
-  // Frame donde quieres que se detenga
-  const FRAME_PAUSA = 150;
+  
 
 
 
-  // Reproduce la primera mitad al cargar la página
-  useEffect(() => {
-    escenaRef.current?.playSegments([0, FRAME_PAUSA], true);
-  }, []);
-
-
-  // Continúa desde donde se quedó
-const continuarEscena = () => {
-  const totalFrames = escenaRef.current.getDuration(true);
-
-  escenaRef.current.playSegments(
-    [FRAME_PAUSA, totalFrames],
-    true
-  );
-};
 
   return (
     <div className="Escenario-Completo">
 
       {/* Animación principal */}
       <Lottie
-    lottieRef={escenaRef}
+
     animationData={AnimacionEscena1}
-    autoplay={false}
+    autoplay={true}
     loop={false}
     className="Fondo-escena1"
     style={{
@@ -64,8 +45,8 @@ const continuarEscena = () => {
         <Lottie
           animationData={BotonAnimado}
           autoplay={true}
-          loop={true}
-          onClick={continuarEscena}
+          loop={false}
+       
           style={{
             width: 120,
             cursor: "pointer",
