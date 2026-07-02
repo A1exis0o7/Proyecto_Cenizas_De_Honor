@@ -2,6 +2,13 @@
     animation: moverse 11s linear ;
 }
 
+.aura{
+    filter: drop-shadow(0 0 8px yellow)
+            drop-shadow(0 0 10px yellow)
+            drop-shadow(0 0 15px gold);
+    animation: parpadeo 2.5s ease-in-out infinite;
+}
+
 .Fondo{
     background-image: url('../Assets/imagenes-miguel/caminos-desiertos.jpg');
     min-height: 100vh; 
@@ -19,3 +26,18 @@
     100% { transform: translateY(-9vw) translateX(-20vw); }
 }
 
+@keyframes parpadeo{
+
+    0%,100%{
+        filter:
+            drop-shadow(0 0 2px rgba(255, 230, 80, 0.35))
+            drop-shadow(0 0 5px rgba(255, 215, 0, 0.25));
+    }
+
+    50%{
+        filter:
+            drop-shadow(0 0 8px rgba(255, 230, 80, 0.55))
+            drop-shadow(0 0 10px gold);
+    }
+
+}
