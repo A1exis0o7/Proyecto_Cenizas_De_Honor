@@ -14,15 +14,14 @@ export const Llanuras = () => {
     const leonRef = useRef(null);
 
     return (
-        <div className="contenedor-personajes">
-            <Lottie
-                lottieRef={leonRef}
-                animationData={animacionLeon}
-                loop={true}
-                autoplay={true}
-                style={{ width: 600, height: 600 }}
-            />
-
+        <div className="pantalla-llanuras">
+                <Lottie
+                    lottieRef={leonRef}
+                    animationData={animacionLeon}
+                    loop={true}
+                    autoplay={true}
+                    style={{ width: 600, height: 600, position: 'absolute', zIndex: 10 }}
+                />
             <div className="pantalla-llanuras">
                 <img className="fondo-capa cielo" src={imgCielo} alt="Cielo" />
                 <img className="fondo-capa sol" src={imgSol} alt="Sol" />
