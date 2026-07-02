@@ -22,4 +22,12 @@ html, body, #root{
     height: 100%;
 }
 
+.Boton-Continuar{
+    position: absolute;
+    top: 250px;
+    left: 35%;
+    width: 30%;
+
+}
+
 
