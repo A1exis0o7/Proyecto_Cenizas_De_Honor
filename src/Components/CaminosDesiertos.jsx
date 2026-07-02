@@ -20,7 +20,7 @@ const CaminosDesiertos = () => {
     <div className="Escenario-Completo Fondo">
 
       <div
-        className="position-absolute oso"
+        className="position-absolute "
         onClick={reproducir}
       >
         <Lottie
