@@ -45,9 +45,9 @@
       
 .leon-lottie{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    top: -190px;
+    left: 1px;
+    height: 167%;
     z-index: 5;
 }
 @keyframes moverSol {
