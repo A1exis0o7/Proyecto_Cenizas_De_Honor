@@ -101,7 +101,9 @@ const Marca = () => {
                     width: '100%',
                     height: '350px',
                     maxHeight: '450px',
-                    backgroundColor: '#1a1a1a',
+                    backgroundImage: "url('/img-luna/1.png')",
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
                     border: '1px solid #333',
                   }}
                 />
@@ -136,7 +138,9 @@ const Marca = () => {
                 style={{
                   width: '100%',
                   height: '300px',
-                  backgroundColor: '#1a1a1a',
+                  backgroundImage: "url('/img-luna/2.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                   border: '1px solid #333',
                 }}
               />
@@ -161,7 +165,9 @@ const Marca = () => {
                 style={{
                   width: '100%',
                   height: '420px',
-                  backgroundColor: '#1a1a1a',
+                  backgroundImage: "url('/img-luna/3.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                   border: '1px solid #333',
                 }}
               />
@@ -202,7 +208,9 @@ const Marca = () => {
                 style={{
                   width: '100%',
                   height: '280px',
-                  backgroundColor: '#1a1a1a',
+                  backgroundImage: "url('/img-luna/4.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                   border: '1px solid #333',
                 }}
               />
@@ -215,7 +223,9 @@ const Marca = () => {
                 style={{
                   width: '100%',
                   height: '280px',
-                  backgroundColor: '#1a1a1a',
+                  backgroundImage: "url('/img-luna/5.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                   border: '1px solid #333',
                 }}
               />
@@ -308,7 +318,9 @@ const Marca = () => {
                 style={{
                   width: '100%',
                   height: '320px',
-                  backgroundColor: '#1a1a1a',
+                  backgroundImage: "url('/img-luna/Grupo%201.jpg')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
                   border: '1px solid #333',
                 }}
               />
