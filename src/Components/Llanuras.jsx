@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState} from "react";
 import lottieReact from "lottie-react";
 import animacionLeon from "../assets/AnimaciónLuna/Llanuraleón.json";
 
@@ -13,12 +13,19 @@ const Lottie = lottieReact.default;
 export const Llanuras = () => {
     const leonRef = useRef(null);
 
+ const estaReproduciendo = useRef(true);
+
+    const alternarLeon = () => {
+        estaReproduciendo.current ? leonRef.current?.pause() : leonRef.current?.play();
+        estaReproduciendo.current = !estaReproduciendo.current;
+    };
     return (
         <div className="pantalla-llanuras"> 
                 <img className="fondo-capa cielo" src={imgCielo} alt="Cielo" />
                 <img className="fondo-capa sol" src={imgSol} alt="Sol" />
                 <img className="fondo-capa llanura" src={imgLlanura} alt="Llanura" />
                 
+               <div className="leon-clickeable" onClick={alternarLeon}> 
                 <Lottie
                     lottieRef={leonRef}
                     animationData={animacionLeon}
@@ -26,8 +33,10 @@ export const Llanuras = () => {
                     autoplay={true}
                    className= "leon-lottie"
                 />
-           
+           </div>
                 <img className="fondo-capa nubes" src={imgNubes} alt="Nubes" />
+
+                
             </div>
     
     );
